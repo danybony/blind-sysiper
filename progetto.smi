@@ -11,14 +11,15 @@
     <root-layout  width="610" height="610" />
         <region id="region_titolo" top="0" left="5" width="600" height="500" />
 		<region id="region_centro" top="150" left="100" width="400" height="200" />
-		<region id="region_logo" top="10" left="300" width="250" height="62" />
+		<region id="region_logo_movimento" top="190" left="50" width="500" height="123" />
+		<region id="region_logo_fermo" top="10" left="300" width="250" height="62" />
    </layout>
    <transition id="fade" dur="1s" type="fade" />
   </head>
   <body>
      <seq> 
 		<!-- Introduzione -->
-		<seq>
+		<seq id="intro">
 			<video id="video_saluto_1" transIn="fade" transOut="fade" src="media/video/intro1.mp4"/>
 			
 			<par>
@@ -36,20 +37,20 @@
 			<video id="video_saluto_3" transIn="fade" transOut="fade" src="media/video/intro3.mp4"/>
 			
 			<!-- Ingresso del logo -->			
-			<par>			
-				<img id="logo_temp" region="region_logo" fit="fill" transOut="fade" src="media/testo/logo.gif" dur="6s"/>			
-				<animateMotion targetElement="region_logo" from="-200,-250" to="50,190" dur="3s" />
-				<animate targetElement="region_logo" attributeName="width" values="1000; 500" dur="3s"/>
-				<animate targetElement="region_logo" attributeName="height" values="246; 123" dur="3s"/>
+			<par id="ingresso_logo">			
+				<img id="logo_grande" region="region_logo_movimento" fit="fill" src="media/testo/logo.gif" dur="6s" fill="transition"/>
+				<animateMotion targetElement="region_logo_movimento" from="-200,-250" to="50,190" dur="3s" />
+				<animate targetElement="region_logo_movimento" attributeName="width" values="1000; 500" dur="3s"/>
+				<animate targetElement="region_logo_movimento" attributeName="height" values="246; 123" dur="3s"/>
 				<!-- <audio id="audio_grida_3" src="media/audio/grida3.mp3"/> -->
 			</par>
 			
 			<!-- Sposta il logo nella posizione finale -->
-			<par>
-				<img id="logo" region="region_logo" fit="fill" transOut="fade" src="media/testo/logo.gif" dur="6s"/>
-				<animateMotion targetElement="region_logo" from="50,190" to="300,10" dur="3s" />
-				<animate targetElement="region_logo" attributeName="width" values="500; 250" dur="3s"/>
-				<animate targetElement="region_logo" attributeName="height" values="123; 62" dur="3s"/>
+			<par id="posizionamento_logo">
+				<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif" dur="3s" fill="transition"/>
+				<animateMotion targetElement="region_logo_fermo" from="50,190" to="300,10" dur="3s"/>
+				<animate targetElement="region_logo_fermo" attributeName="width" values="500; 250" dur="3s"/>
+				<animate targetElement="region_logo_fermo" attributeName="height" values="123; 62" dur="3s"/>
 			</par>
 		</seq>	
 		
