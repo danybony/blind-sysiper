@@ -1,0 +1,59 @@
+<smil xmlns="http://www.w3.org/2001/SMIL20/Language" >
+<!-- Progetto di Sistemi Ipermediali
+    Anno: 2009/2010
+    Autori: Daniele Bonaldo, Luca Dei Zotti
+-->
+  <head>
+   <meta name="Title" content="Progetto di Sistemi Ipermediali" />
+   <meta name="Author" content="Daniele Bonaldo, Luca Dei Zotti" />
+   <meta name="Date" content="10 Dicembre 2009" />
+   <layout>
+    <root-layout  width="610" height="610" />
+        <region id="region_titolo" top="0" left="5" width="600" height="500" />
+		<region id="region_centro" top="150" left="100" width="400" height="200" />
+		<region id="region_logo" top="10" left="300" width="250" height="62" />
+   </layout>
+   <transition id="fade" dur="1s" type="fade" />
+  </head>
+  <body>
+     <seq> 
+		<!-- Introduzione -->
+		<seq>
+			<video id="video_saluto_1" transIn="fade" transOut="fade" src="media/video/intro1.mp4"/>
+			
+			<par>
+				<img id="testo_nomi" region="region_centro" transIn="fade" transOut="fade" src="media/testo/nomi.gif" dur="4s"/>
+				<!-- <audio id="audio_grida_1" src="media/audio/grida1.mp3"/> -->
+			</par>
+			
+			<video id="video_saluto_2" transIn="fade" transOut="fade" src="media/video/intro2.mp4"/>
+			
+			<par>
+				<img id="testo_present" region="region_centro" transIn="fade" transOut="fade" src="media/testo/present.gif" dur="4s"/>
+				<!-- <audio id="audio_grida_2" src="media/audio/grida2.mp3"/> -->
+			</par>
+			
+			<video id="video_saluto_3" transIn="fade" transOut="fade" src="media/video/intro3.mp4"/>
+			
+			<!-- Ingresso del logo -->			
+			<par>			
+				<img id="logo_temp" region="region_logo" fit="fill" transOut="fade" src="media/testo/logo.gif" dur="6s"/>			
+				<animateMotion targetElement="region_logo" from="-200,-250" to="50,190" dur="3s" />
+				<animate targetElement="region_logo" attributeName="width" values="1000; 500" dur="3s"/>
+				<animate targetElement="region_logo" attributeName="height" values="246; 123" dur="3s"/>
+				<!-- <audio id="audio_grida_3" src="media/audio/grida3.mp3"/> -->
+			</par>
+			
+			<!-- Sposta il logo nella posizione finale -->
+			<par>
+				<img id="logo" region="region_logo" fit="fill" transOut="fade" src="media/testo/logo.gif" dur="6s"/>
+				<animateMotion targetElement="region_logo" from="50,190" to="300,10" dur="3s" />
+				<animate targetElement="region_logo" attributeName="width" values="500; 250" dur="3s"/>
+				<animate targetElement="region_logo" attributeName="height" values="123; 62" dur="3s"/>
+			</par>
+		</seq>	
+		
+        
+     </seq>
+  </body>
+</smil>
