@@ -9,32 +9,33 @@
    <meta name="Date" content="10 Dicembre 2009" />
    <layout>
     <root-layout  width="610" height="610" />
-        <region id="region_titolo" top="0" left="5" width="600" height="500" />
+    		<region id="region_titolo" top="0" left="5" width="600" height="500" />
 		<region id="region_centro" top="150" left="100" width="400" height="200" />
 		<region id="region_logo_movimento" top="190" left="50" width="500" height="123" />
-		<region id="region_logo_fermo" top="10" left="300" width="250" height="62" />
+		<region id="region_logo_fermo" top="10" left="350" width="200" height="50" />
+		<region id="region_skip" top="470" left="480" width="100" height="25" />
    </layout>
    <transition id="fade" dur="1s" type="fade" />
   </head>
   <body>
-     <seq> 
+     <par> 
 		<!-- Introduzione -->
 		<seq id="intro">
-			<video id="video_saluto_1" transIn="fade" transOut="fade" src="media/video/intro1.mp4"/>
+			<!--<video id="video_saluto_1" transIn="fade" transOut="fade" src="media/video/intro1.mp4"/>-->
 			
 			<par>
 				<img id="testo_nomi" region="region_centro" transIn="fade" transOut="fade" src="media/testo/nomi.gif" dur="4s"/>
 				<!-- <audio id="audio_grida_1" src="media/audio/grida1.mp3"/> -->
 			</par>
 			
-			<video id="video_saluto_2" transIn="fade" transOut="fade" src="media/video/intro2.mp4"/>
+			<!--<video id="video_saluto_2" transIn="fade" transOut="fade" src="media/video/intro2.mp4"/>-->
 			
 			<par>
 				<img id="testo_present" region="region_centro" transIn="fade" transOut="fade" src="media/testo/present.gif" dur="4s"/>
 				<!-- <audio id="audio_grida_2" src="media/audio/grida2.mp3"/> -->
 			</par>
 			
-			<video id="video_saluto_3" transIn="fade" transOut="fade" src="media/video/intro3.mp4"/>
+			<!--<video id="video_saluto_3" transIn="fade" transOut="fade" src="media/video/intro3.mp4"/>-->
 			
 			<!-- Ingresso del logo -->			
 			<par id="ingresso_logo">			
@@ -47,14 +48,21 @@
 			
 			<!-- Sposta il logo nella posizione finale -->
 			<par id="posizionamento_logo">
-				<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif" dur="3s" fill="transition"/>
-				<animateMotion targetElement="region_logo_fermo" from="50,190" to="300,10" dur="3s"/>
-				<animate targetElement="region_logo_fermo" attributeName="width" values="500; 250" dur="3s"/>
-				<animate targetElement="region_logo_fermo" attributeName="height" values="123; 62" dur="3s"/>
+				<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif" dur="2s" fill="transition"/>
+				<animateMotion targetElement="region_logo_fermo" from="50,190" to="350,10" dur="2s"/>
+				<animate targetElement="region_logo_fermo" attributeName="width" values="500; 200" dur="2s"/>
+				<animate targetElement="region_logo_fermo" attributeName="height" values="123; 50" dur="2s"/>
 			</par>
+
+			<a href="menu.smi" show="replace" actuate="onLoad">
+				<img region="region_logo_fermo" fit="fill" dur="1s" src="media/testo/logo.gif"/>
+			</a>
 		</seq>	
-		
+
+		<a href="menu.smi" show="replace" >
+			<img id="img_skip" region="region_skip" fit="fill" src="media/testo/skip.gif"/>
+		</a>		
         
-     </seq>
+     </par>
   </body>
 </smil>
