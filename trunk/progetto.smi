@@ -4,7 +4,7 @@
     Autori: Daniele Bonaldo, Luca Dei Zotti
 -->
   <head>
-   <meta name="Title" content="Progetto di Sistemi Ipermediali" />
+   <meta name="Title" content="Blind Guardian - Intro" />
    <meta name="Author" content="Daniele Bonaldo, Luca Dei Zotti" />
    <meta name="Date" content="10 Dicembre 2009" />
    <layout>
@@ -12,7 +12,7 @@
     		<region id="region_titolo" top="0" left="5" width="600" height="500" />
 		<region id="region_centro" top="150" left="100" width="400" height="200" />
 		<region id="region_logo_movimento" top="190" left="50" width="500" height="123" />
-		<region id="region_logo_fermo" top="10" left="350" width="200" height="50" />
+		<region id="region_logo_fermo" top="5" left="350" width="200" height="50" />
 		<region id="region_skip" top="470" left="480" width="100" height="25" />
    </layout>
    <transition id="fade" dur="1s" type="fade" />
@@ -49,7 +49,7 @@
 			<!-- Sposta il logo nella posizione finale -->
 			<par id="posizionamento_logo">
 				<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif" dur="2s" fill="transition"/>
-				<animateMotion targetElement="region_logo_fermo" from="50,190" to="350,10" dur="2s"/>
+				<animateMotion targetElement="region_logo_fermo" from="50,190" to="350,5" dur="2s"/>
 				<animate targetElement="region_logo_fermo" attributeName="width" values="500; 200" dur="2s"/>
 				<animate targetElement="region_logo_fermo" attributeName="height" values="123; 50" dur="2s"/>
 			</par>
