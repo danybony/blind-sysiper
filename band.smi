@@ -1,0 +1,32 @@
+<smil xmlns="http://www.w3.org/2001/SMIL20/Language" >
+<!-- Progetto di Sistemi Ipermediali
+    Anno: 2009/2010
+    Autori: Daniele Bonaldo, Luca Dei Zotti
+-->
+  <head>
+   <meta name="Title" content="Blind Guardian - Band" />
+   <meta name="Author" content="Daniele Bonaldo, Luca Dei Zotti" />
+   <meta name="Date" content="10 Dicembre 2009" />
+   <layout>
+    <root-layout  width="610" height="610" />
+    	<region id="region_titolo" top="0" left="5" width="600" height="500" />
+	<region id="region_sfondo" top="0" left="5" width="600" height="500" />
+	<region id="region_logo_fermo" top="10" left="350" width="200" height="50" />
+	<region id="region_scelta1" top="355" left="130" width="150" height="100" z-index="1"/>
+        <region id="region_scelta2" top="355" left="330" width="150" height="100" z-index="1"/>
+        <region id="region_scelta3" top="480" left="130" width="150" height="100" />
+        <region id="region_scelta4" top="480" left="330" width="150" height="100" />
+   </layout>
+   <transition id="fade" dur="1s" type="fade" />
+  </head>
+  <body>
+     <par repeatCount="indefinite"> 
+	<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif"/>
+	<img id="sfondo" region="region_sfondo" transIn="fade" fit="fill" src="media/img/in-the-forest.jpg"/>
+	<img id="opt1" region="region_scelta1" transIn="fade" fit="meet" src="media/testo/band.gif"/>
+       	<img id="opt2" region="region_scelta2" transIn="fade" fit="meet" src="media/testo/discografia.gif"/>
+       	<img id="opt3" region="region_scelta3" transIn="fade" fit="meet" src="media/testo/media.gif"/>
+       	<img id="opt4" region="region_scelta4" transIn="fade" fit="meet" src="media/testo/tours.gif"/>
+    </par>
+  </body>
+</smil>
