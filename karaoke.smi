@@ -1,0 +1,35 @@
+<smil xmlns="http://www.w3.org/2001/SMIL20/Language" >
+<!-- Progetto di Sistemi Ipermediali
+    Anno: 2009/2010
+    Autori: Daniele Bonaldo, Luca Dei Zotti
+    KARAOKE
+-->
+  <head>
+   <meta name="Title" content="Blind Guardian - Karaoke" />
+   <meta name="Author" content="Daniele Bonaldo, Luca Dei Zotti" />
+   <meta name="Date" content="10 Dicembre 2009" />
+   <layout>
+	<root-layout  width="610" height="610" />
+		<region id="region_sfondo" top="60" left="0" width="610" height="550" z-index="0"/>
+        
+        <region id="region_lyrics" top="540" left="0" width="610" height="70" z-index="1"/>
+        <region id="region_video_lotr" top="10" left="50" width="400" height="400" z-index="1"/>	
+   </layout>
+   <!-- Left-to-right transitions -->
+   <transition id="wipe1" type="barWipe" subtype="leftToRight" dur="1s"/>
+   <transition id="fade" dur="1s" type="fade" />
+  </head>
+  
+  <body>
+    <par>
+      <video id="video_lotr" region="region_video_lotr" transIn="fade" transOut="fade" src="media/video/lotr.mp4"/>
+    
+      <seq id="karaoke">
+        <par>
+          <img id="lyric1" dur="2s" region="region_lyrics" fit="fill" src="media/lyrics/1.gif"/>
+	<img id="lyric1r" dur="2s" region="region_lyrics" fit="fill" src="media/lyrics/1r.gif" transIn="wipe1"/>
+        </par>
+      </seq>
+    </par>
+  </body>
+</smil>
