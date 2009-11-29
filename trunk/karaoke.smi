@@ -13,10 +13,13 @@
 		<region id="region_sfondo" top="60" left="0" width="610" height="550" z-index="0"/>
         
         <region id="region_lyrics" top="470" left="0" width="610" height="140" z-index="1"/>
+        <region id="region_lyrics_over" top="470" left="0" width="610" height="140" z-index="2"/>
         <region id="region_video_lotr" top="10" left="50" width="500" height="500" z-index="1"/>	
    </layout>
    <!-- Left-to-right transitions -->
-   <transition id="wipe1" type="barWipe" subtype="leftToRight" dur="2s"/>
+   <transition id="wipe2s" type="barWipe" subtype="leftToRight" dur="2s"/>
+   <transition id="wipe3s" type="barWipe" subtype="leftToRight" dur="3s"/>
+   <transition id="wipe6s" type="barWipe" subtype="leftToRight" dur="6s"/>
    <transition id="fade" dur="2s" type="fade" />
   </head>
   
@@ -26,21 +29,61 @@
     
       <seq id="karaoke">
         <par>
+	<!-- There are signs on the ring -->
           <img id="lyric1" dur="5s" begin="13s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/1.png"/>
-	<img id="lyric1r" dur="3s" begin="16s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/1r.png" transIn="wipe1"/>
+	<img id="lyric1r" dur="3s" begin="16s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/1r.png" transIn="wipe2s"/>
 	<img id="lyric2p" dur="6s" top="70" begin="13s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/2.png"/>
 
+	<!-- Which make me feel so down -->
           <img id="lyric2" dur="5s" begin="19s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/2.png"/>
-	<img id="lyric2r" dur="3s" begin="20s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/2r.png" transIn="wipe1"/>
+	<img id="lyric2r" dur="3s" begin="20s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/2r.png" transIn="wipe2s"/>
 	<img id="lyric3p" dur="5s" top="70" begin="19s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/3.png"/>
 	
+	<!-- There's one to enslave all rings -->
 	<img id="lyric3" dur="3s" begin="24s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/3.png"/>
-	<img id="lyric3r" dur="3s" begin="24s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/3r.png" transIn="wipe1"/>
-	<img id="lyric4p" dur="6s" top="70" begin="24s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/4.png"/>
+	<img id="lyric3r" dur="3s" begin="24s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/3r.png" transIn="wipe2s"/>
+	<img id="lyric4p" dur="3s" top="70" begin="24s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/4.png"/>
 	
-	<img id="lyric4" dur="5s" begin="27s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/4.png"/>
-	<img id="lyric4r" dur="3s" begin="27s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/4r.png" transIn="wipe1"/>
-	<img id="lyric5p" dur="6s" top="70" begin="27s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/4.png"/>
+	<!-- To find them all in time -->
+	<img id="lyric4" dur="3s" begin="27s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/4.png"/>
+	<img id="lyric4r" dur="3s" begin="27s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/4r.png" transIn="wipe2s"/>
+	<img id="lyric5p" dur="3s" top="70" begin="27s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/5.png"/>
+	
+	<!-- And drive them into darkness -->
+	<img id="lyric5" dur="3s" begin="30s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/5.png"/>
+	<img id="lyric5r" dur="3s" begin="30s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/5r.png" transIn="wipe2s"/>
+	<img id="lyric6p" dur="3s" top="70" begin="30s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/6.png"/>
+	
+	<!-- Forever they'll be bound -->
+	<img id="lyric6" dur="6s" begin="33s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/6.png"/>
+	<img id="lyric6r" dur="6s" begin="33s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/6r.png" transIn="wipe6s"/>
+	
+	<!-- Three for the kings -->
+	<img id="lyric7" dur="5s" begin="40s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/7.png"/>
+	<img id="lyric7r" dur="3s" begin="42s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/7r.png" transIn="wipe3s"/>
+	<img id="lyric8p" dur="5s" top="70" begin="40s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/8.png"/>
+	
+	<!-- Of the Elves high in light -->
+	<img id="lyric8" dur="4s" begin="45s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/8.png"/>
+	<img id="lyric8r" dur="4s" begin="45s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/8r.png" transIn="wipe3s"/>
+	<img id="lyric9p" dur="4s" top="70" begin="45s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/9.png"/>
+	
+	<!-- Nine to the mortals -->
+	<img id="lyric9" dur="3s" begin="49s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/9.png"/>
+	<img id="lyric9r" dur="3s" begin="49s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/9r.png" transIn="wipe3s"/>
+	<img id="lyric10p" dur="3s" top="70" begin="49s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/10.png"/>
+	
+	<!-- Which cry... -->
+	<img id="lyric10" dur="2s" begin="52s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/10.png"/>
+	<img id="lyric11r" dur="2s" begin="52s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/10r.png" transIn="wipe2s"/>
+	
+	<!-- Solo Marcus -->
+	<img id="lyricsolomarcus1" dur="14s" begin="55s" region="region_lyrics" top="0" fit="meet" fill="remove" src="media/lyrics/solomarcus1.png"/>
+	<img id="lyricsolomarcusover" begin="58s" region="region_lyrics_over" top="0" fit="meet" src="media/lyrics/solomarcusover.png" dur="11s" fill="transition"/>
+	<animateMotion targetElement="region_lyrics_over" from="-200,-470" to="0,470" dur="4s" />
+	<animate targetElement="region_lyrics_over" attributeName="width" values="1000; 610" dur="4s"/>
+	<animate targetElement="region_lyrics_over" attributeName="height" values="140; 140" dur="4s"/>
+	
         </par>	
 	
       </seq>
