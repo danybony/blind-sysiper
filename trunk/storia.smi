@@ -29,7 +29,7 @@
        	<img id="opt_fred" region="region_fred" transIn="fade" fit="meet" src="media/img/fred.jpg"/>
 		
 		<excl dur="240s">
-                <img id="testo_hansi" region="region_testo" src="media/img/hansi_grande.jpg" fit="fill"                            
+                <text id="testo_hansi" region="region_testo" src="media/testo/storia_3.rt" fit="fill"                            
                             begin="0s;opt_hansi.activateEvent" dur="indefinite" fill="remove"
 							end="opt_andre.activateEvent;opt_marcus.activateEvent;opt_fred.activateEvent"/>
 							
