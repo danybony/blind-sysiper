@@ -16,17 +16,16 @@
 		<region id="region_skip" top="470" left="480" width="100" height="25" />
    </layout>
    <transition id="fade" dur="1s" type="fade" />
-   <transition id="audio_fade" type="audioFade" dur="2s"/>
   </head>
   <body>
      <par> 
 		<!-- Introduzione -->
 		<seq id="intro">
-			<audio id="saluto_1" transIn="audio_fade" transOut="audio_fade" src="media/audio/hi1.mp3"/>
+			<audio id="saluto_1" src="media/audio/hi1.mp3"/>
 			
 			<par dur="4s">
 				<img id="testo_nomi" region="region_centro" transIn="fade" transOut="fade" src="media/testo/nomi.gif" dur="4s"/>
-				<audio id="folla_1" transOut="audio_fade"  dur="4s" src="media/audio/folla1.mp3"/>
+				<audio id="folla_1" src="media/audio/folla1.mp3"/>
 			</par>
 			
 			<audio id="saluto_2" transIn="fade" transOut="fade" src="media/audio/hi2.mp3"/>
