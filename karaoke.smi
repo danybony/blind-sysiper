@@ -14,6 +14,8 @@
         
         <region id="region_lyrics" top="470" left="0" width="610" height="140" z-index="1"/>
         <region id="region_lyrics_over" top="470" left="0" width="610" height="140" z-index="2"/>
+        <region id="regon_lyrics_ref"  top="450" left="80" width="280" height="70" z-index="2"/>
+        <region id="regon_lyrics_ref2"  top="450" left="200" width="280" height="70" z-index="2"/>
         <region id="region_video_lotr" top="10" left="50" width="500" height="500" z-index="1"/>	
    </layout>
    <!-- Left-to-right transitions -->
@@ -79,10 +81,25 @@
 	
 	<!-- Solo Marcus -->
 	<img id="lyricsolomarcus1" dur="14s" begin="55s" region="region_lyrics" top="0" fit="meet" fill="remove" src="media/lyrics/solomarcus1.png"/>
-	<img id="lyricsolomarcusover" begin="58s" region="region_lyrics_over" top="0" fit="meet" src="media/lyrics/solomarcusover.png" dur="11s" fill="transition"/>
-	<animateMotion targetElement="region_lyrics_over" from="-200,-470" to="0,470" dur="4s" />
-	<animate targetElement="region_lyrics_over" attributeName="width" values="1000; 610" dur="4s"/>
-	<animate targetElement="region_lyrics_over" attributeName="height" values="140; 140" dur="4s"/>
+	
+	<!-- REF. -->
+	<!-- Slow -->
+	<par id="ref1" dur="2s" begin="70s">
+		<img id="lyricsref1" region="regon_lyrics_ref" fit="fill" src="media/lyrics/ref1.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="regon_lyrics_ref" from="220,415" to="80,450" dur="1s" />
+		<animate targetElement="regon_lyrics_ref" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="regon_lyrics_ref" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- down -->
+	<par id="ref2" dur="2s" begin="71s">
+		<img id="lyricsref2" region="regon_lyrics_ref2" fit="fill" src="media/lyrics/ref2.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="regon_lyrics_ref2" from="340,415" to="200,450" dur="1s" />
+		<animate targetElement="regon_lyrics_ref2" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="regon_lyrics_ref2" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- /REF -->
 	
         </par>	
 	
