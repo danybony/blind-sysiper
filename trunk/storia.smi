@@ -9,57 +9,81 @@
    <meta name="Date" content="10 Dicembre 2009" />
    <layout>
     <root-layout  width="610" height="610" />
-		<region id="region_sfondo" top="60" left="5" width="600" height="550" z-index="0"/>
 		<region id="region_logo_fermo" top="10" left="350" width="200" height="50" />
-		<region id="region_album_1" top="100" left="5" width="80" height="80" z-index="1"/>
-		<region id="region_album_2" top="185" left="5" width="80" height="80" z-index="1"/>
-		<region id="region_album_3" top="270" left="5" width="80" height="80" z-index="1"/>
-		<region id="region_album_4" top="355" left="5" width="80" height="80" z-index="1"/>
-		<region id="region_album_5" top="440" left="5" width="80" height="80" z-index="1"/>
-		<region id="region_album_6" top="525" left="90" width="80" height="80" z-index="1"/>
-		<region id="region_album_7" top="525" left="175" width="80" height="80" z-index="1"/>
-		<region id="region_album_8" top="525" left="260" width="80" height="80" z-index="1"/>
-		<region id="region_album_9" top="525" left="345" width="80" height="80" z-index="1"/>
-		<region id="region_album_10" top="525" left="430" width="80" height="80" z-index="1"/>
-		<region id="region_testo" top="80" left="130" width="470" height="420" z-index="1"/>
-		<region id="region_avanti" top="540" left="500" width="100" height="50" z-index="1"/>
+		<region id="region_indietro" top="10" left="30" width="150" height="30"/>
+		<region id="region_album_1" top="100" left="5" width="80" height="80"/>
+		<region id="region_album_2" top="185" left="5" width="80" height="80"/>
+		<region id="region_album_3" top="270" left="5" width="80" height="80"/>
+		<region id="region_album_4" top="355" left="5" width="80" height="80"/>
+		<region id="region_album_5" top="440" left="5" width="80" height="80"/>
+		<region id="region_album_6" top="525" left="90" width="80" height="80"/>
+		<region id="region_album_7" top="525" left="175" width="80" height="80"/>
+		<region id="region_album_8" top="525" left="260" width="80" height="80"/>
+		<region id="region_album_9" top="525" left="345" width="80" height="80"/>
+		<region id="region_album_10" top="525" left="430" width="80" height="80"/>
+		<region id="region_testo" top="80" left="130" width="470" height="420"/>
+		<region id="region_avanti" top="540" left="500" width="100" height="50"/>
    </layout>
    <transition id="fade" dur="1s" type="fade" />
   </head>
   <body>
-     <par dur="240s" repeatCount="indefinite"> 
-		<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif"/>
+	<par dur="indefinite">
+		<a href="menu.smi" show="replace">
+			<img id="bottone_indietro" region="region_indietro" dur="indefinite" fit="fill" src="media/testo/indietro.gif"/>
+		</a>
+		<img id="logo" region="region_logo_fermo" dur="indefinite" fit="fill" src="media/testo/logo.gif"/>
 		
-		<audio src="media/audio/origini.mp3"/>
-		
-		<img region="region_album_1" fit="fill" src="media/img/batalionsofear.jpg"/>
-		<img region="region_album_2" fit="fill" src="media/img/followtheblind.jpg"/>
-		<img region="region_album_3" fit="fill" src="media/img/talesfromtwillight.jpg"/>
-		<img region="region_album_4" fit="fill" src="media/img/somewherefarbeyond.jpg"/>
-		<img region="region_album_5" fit="fill" src="media/img/tokyotales.jpg"/>
-		<img region="region_album_6" fit="fill" src="media/img/imaginationsfromother.jpg"/>
-		<img region="region_album_7" fit="fill" src="media/img/forgottentales.jpg"/>
-		<img region="region_album_8" fit="fill" src="media/img/nightfall.jpg"/>
-		<img region="region_album_9" fit="fill" src="media/img/opera.jpg"/>
-		<img region="region_album_10" fit="fill" src="media/img/atwistinthemyth.jpg"/>
+		<img region="region_album_1" dur="indefinite" fit="fill" src="media/img/batalionsofear.jpg"/>
+		<img region="region_album_2" dur="indefinite" fit="fill" src="media/img/followtheblind.jpg"/>
+		<img region="region_album_3" dur="indefinite" fit="fill" src="media/img/talesfromtwillight.jpg"/>
+		<img region="region_album_4" dur="indefinite" fit="fill" src="media/img/somewherefarbeyond.jpg"/>
+		<img region="region_album_5" dur="indefinite" fit="fill" src="media/img/tokyotales.jpg"/>
+		<img region="region_album_6" dur="indefinite" fit="fill" src="media/img/imaginationsfromother.jpg"/>
+		<img region="region_album_7" dur="indefinite" fit="fill" src="media/img/forgottentales.jpg"/>
+		<img region="region_album_8" dur="indefinite" fit="fill" src="media/img/nightfall.jpg"/>
+		<img region="region_album_9" dur="indefinite" fit="fill" src="media/img/opera.jpg"/>
+		<img region="region_album_10" dur="indefinite" fit="fill" src="media/img/atwistinthemyth.jpg"/>
 
 		<seq>
-			<par>
-                <text id="storia_1" region="region_testo" src="media/testo/storia_1.rt" dur="2s"/>
-				<img id="bottone_avanti_1" region="region_avanti" fit="meet" src="media/testo/logo.gif"/>
+			<par id="par_storia_1" dur="5s">
+<!-- 				<audio id="audio_1" src="media/audio/origini.mp3"/> -->
+				
+				<textstream id="storia_1" region="region_testo" src="media/testo/storia_1.rt" />
+				
+				<a href="#par_storia_2">
+					<img id="bottone_avanti_1" region="region_avanti" fit="meet" src="media/testo/next.gif"/>
+                		</a>
 			</par>
-					
-			<par>
-                <text id="storia_2" region="region_testo" src="media/testo/storia_2.rt" dur="2s"/>
-				<img id="bottone_avanti_2" region="region_avanti" fit="meet" src="media/testo/logo.gif"/>
+	
+			<par id="par_storia_2" dur="5s">
+<!-- 				<audio id="audio_2" src="media/audio/successo1.mp3"/> -->
+				
+				<textstream id="storia_2" region="region_testo" src="media/testo/storia_2.rt"/>
+				
+				<a href="#par_storia_2_2">
+					<img id="bottone_avanti_2" region="region_avanti" fit="meet" src="media/testo/next.gif"/>
+                		</a>
 			</par>
 			
-			<par>
-                <text id="storia_2_2" region="region_testo" src="media/testo/storia_2_2.rt" dur="2s"/>
-				<img id="bottone_avanti_2_2" region="region_avanti" fit="meet" src="media/testo/logo.gif"/>
+			<par id="par_storia_2_2" dur="5s">
+				<!--<audio id="audio_1" src="media/audio/successo2.mp3"/>-->
+				
+				<textstream id="storia_2_2" region="region_testo" src="media/testo/storia_2_2.rt"/>
+				
+				<a href="#par_storia_3">
+					<img id="bottone_avanti_2_2" region="region_avanti" fit="meet" src="media/testo/next.gif"/>
+                		</a>
 			</par>
-							
-                <text id="storia_3" region="region_testo" src="media/testo/storia_3.rt" dur="2s"/>
+		
+			<par id="par_storia_3" dur="5s">
+				<!--<audio id="audio_1" src="media/audio/anni_recenti.mp3"/>-->
+				
+				<textstream id="storia_3" region="region_testo" src="media/testo/storia_3.rt"/>
+				
+				<a href="#par_storia_1">
+					<img id="bottone_repeat" region="region_avanti" fit="meet" src="media/testo/repeat.gif"/>
+                		</a>
+			</par>
         </seq>
 		
     </par>
