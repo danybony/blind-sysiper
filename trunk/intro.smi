@@ -32,7 +32,7 @@
 			
 			<par>
 				<img id="testo_present" region="region_centro" transIn="fade" transOut="fade" src="media/testo/present.gif" dur="4s"/>
-				<!-- <audio id="audio_grida_2" src="media/audio/grida2.mp3"/> -->
+				<audio id="folla_2" src="media/audio/folla2.mp3"/>
 			</par>
 			
 			<audio id="saluto_3" transIn="audio_fade" transOut="audio_fade" src="media/audio/hi3.mp3"/>

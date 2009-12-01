@@ -4,47 +4,64 @@
     Autori: Daniele Bonaldo, Luca Dei Zotti
 -->
   <head>
-   <meta name="Title" content="Blind Guardian - Band" />
+   <meta name="Title" content="Blind Guardian - La Storia" />
    <meta name="Author" content="Daniele Bonaldo, Luca Dei Zotti" />
    <meta name="Date" content="10 Dicembre 2009" />
    <layout>
     <root-layout  width="610" height="610" />
 		<region id="region_sfondo" top="60" left="5" width="600" height="550" z-index="0"/>
 		<region id="region_logo_fermo" top="10" left="350" width="200" height="50" />
-		<region id="region_hansi" top="80" left="10" width="100" height="100" z-index="1"/>
-        <region id="region_andre" top="200" left="10" width="100" height="100" z-index="1"/>
-        <region id="region_marcus" top="320" left="10" width="100" height="100" z-index="1"/>
-        <region id="region_fred" top="440" left="10" width="100" height="100" z-index="1"/>
-		<region id="region_testo" top="80" left="130" width="470" height="500" z-index="1"/>
+		<region id="region_album_1" top="100" left="5" width="80" height="80" z-index="1"/>
+		<region id="region_album_2" top="185" left="5" width="80" height="80" z-index="1"/>
+		<region id="region_album_3" top="270" left="5" width="80" height="80" z-index="1"/>
+		<region id="region_album_4" top="355" left="5" width="80" height="80" z-index="1"/>
+		<region id="region_album_5" top="440" left="5" width="80" height="80" z-index="1"/>
+		<region id="region_album_6" top="525" left="90" width="80" height="80" z-index="1"/>
+		<region id="region_album_7" top="525" left="175" width="80" height="80" z-index="1"/>
+		<region id="region_album_8" top="525" left="260" width="80" height="80" z-index="1"/>
+		<region id="region_album_9" top="525" left="345" width="80" height="80" z-index="1"/>
+		<region id="region_album_10" top="525" left="430" width="80" height="80" z-index="1"/>
+		<region id="region_testo" top="80" left="130" width="470" height="420" z-index="1"/>
+		<region id="region_avanti" top="540" left="500" width="100" height="50" z-index="1"/>
    </layout>
    <transition id="fade" dur="1s" type="fade" />
   </head>
   <body>
      <par dur="240s" repeatCount="indefinite"> 
 		<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif"/>
-		<img id="sfondo" region="region_sfondo" transIn="fade" fit="fill" src="media/img/in-the-forest.jpg"/>
-		<img id="opt_hansi" region="region_hansi" transIn="fade" fit="meet" src="media/img/hansi.jpg"/>
-       	<img id="opt_andre" region="region_andre" transIn="fade" fit="meet" src="media/img/andre.jpg"/>
-       	<img id="opt_marcus" region="region_marcus" transIn="fade" fit="meet" src="media/img/marcus.jpg"/>
-       	<img id="opt_fred" region="region_fred" transIn="fade" fit="meet" src="media/img/fred.jpg"/>
 		
-		<excl dur="240s">
-                <text id="testo_hansi" region="region_testo" src="media/testo/storia_3.rt" fit="fill"                            
-                            begin="0s;opt_hansi.activateEvent" dur="indefinite" fill="remove"
-							end="opt_andre.activateEvent;opt_marcus.activateEvent;opt_fred.activateEvent"/>
+		<audio src="media/audio/origini.mp3"/>
+		
+		<img region="region_album_1" fit="fill" src="media/img/batalionsofear.jpg"/>
+		<img region="region_album_2" fit="fill" src="media/img/followtheblind.jpg"/>
+		<img region="region_album_3" fit="fill" src="media/img/talesfromtwillight.jpg"/>
+		<img region="region_album_4" fit="fill" src="media/img/somewherefarbeyond.jpg"/>
+		<img region="region_album_5" fit="fill" src="media/img/tokyotales.jpg"/>
+		<img region="region_album_6" fit="fill" src="media/img/imaginationsfromother.jpg"/>
+		<img region="region_album_7" fit="fill" src="media/img/forgottentales.jpg"/>
+		<img region="region_album_8" fit="fill" src="media/img/nightfall.jpg"/>
+		<img region="region_album_9" fit="fill" src="media/img/opera.jpg"/>
+		<img region="region_album_10" fit="fill" src="media/img/atwistinthemyth.jpg"/>
+
+		<seq>
+			<par>
+                <text id="storia_1" region="region_testo" src="media/testo/storia_1.rt" dur="2s"/>
+				<img id="bottone_avanti_1" region="region_avanti" fit="meet" src="media/testo/logo.gif"/>
+			</par>
+					
+			<par>
+                <text id="storia_2" region="region_testo" src="media/testo/storia_2.rt" dur="2s"/>
+				<img id="bottone_avanti_2" region="region_avanti" fit="meet" src="media/testo/logo.gif"/>
+			</par>
+			
+			<par>
+                <text id="storia_2_2" region="region_testo" src="media/testo/storia_2_2.rt" dur="2s"/>
+				<img id="bottone_avanti_2_2" region="region_avanti" fit="meet" src="media/testo/logo.gif"/>
+			</par>
 							
-                <img id="testo_andre" region="region_testo" src="media/img/andre_grande.jpg" fit="fill"
-                            begin="opt_andre.activateEvent" dur="indefinite" fill="remove"
-							end="opt_hansi.activateEvent;opt_marcus.activateEvent;opt_fred.activateEvent"/>
-							
-                <img id="testo_marcus" region="region_testo" src="media/img/marcus_grande.jpg" fit="fill"
-                            begin="opt_marcus.activateEvent" dur="indefinite" fill="remove" 
-							end="opt_andre.activateEvent;opt_hansi.activateEvent;opt_fred.activateEvent"/>
-							
-                <img id="testo_fred" region="region_testo" src="media/img/fred_grande.jpg" fit="fill"
-                            begin="opt_fred.activateEvent" dur="indefinite" fill="remove" 
-							end="opt_andre.activateEvent;opt_marcus.activateEvent;opt_hansi.activateEvent"/>
-        </excl>
+                <text id="storia_3" region="region_testo" src="media/testo/storia_3.rt" dur="2s"/>
+        </seq>
+		
     </par>
   </body>
 </smil>

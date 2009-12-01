@@ -1,0 +1,3 @@
+1) Nei file Real Text è preferibile usare i tag <p></p> o è corretto anche utilizzare <br/>?
+2) Qual'è il giusto marcatore per inserire un elemento Real Text in una presentazione SMIL?
+3) Incompatibilità fra audioFade e Real Player
