@@ -35,7 +35,7 @@
 				<audio id="folla_2" src="media/audio/folla2.mp3"/>
 			</par>
 			
-			<audio id="saluto_3" transIn="audio_fade" transOut="audio_fade" src="media/audio/hi3.mp3"/>
+			<audio id="saluto_3" src="media/audio/hi3.mp3"/>
 			
 			<par>
 				<seq>
@@ -56,7 +56,7 @@
 					</par>
 				</seq>
 				
-				<audio id="folla_3" transIn="audio_fade" transOut="audio_fade" src="media/audio/folla3.mp3"/>
+				<audio id="folla_3" src="media/audio/folla3.mp3"/>
 			</par>
 
 			<a href="menu.smi" show="replace" actuate="onLoad">
