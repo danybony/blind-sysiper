@@ -1,0 +1,14 @@
+<window width="470" height="500" bgcolor = "black">
+	<font face="Verdana" color="cyan" size="5">
+		Andr&#233; Olbrichh
+	</font>
+	<br/><br/>
+	<font face="Verdana" color="white" size="3">
+<br/><font face="Verdana" color="cyan" size="3"><b>Data di nascita:</b></font> 3 maggio 1967
+<br/><font face="Verdana" color="cyan" size="3"><b>Luogo di nascita:</b></font> Dusseldorf
+<br/><font face="Verdana" color="cyan" size="3"><b>Stato civile:</b></font> Sposato con un figlio
+<br/><font face="Verdana" color="cyan" size="3"><b>Strumento:</b></font> Chitarra
+<br/><font face="Verdana" color="cyan" size="3"><b>Note:</b></font> I suoi libri preferiti sono "Il signore degli anelli" e "Silmarillion" di Tolkien, per i quali il suo sogno &#233; di creare un'opera rock orchestrale. I suoi gruppi preferiti sono Judas Priest, Megadeth, Ozzy Osbourne.
+
+	</font>
+</window>

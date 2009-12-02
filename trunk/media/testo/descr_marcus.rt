@@ -1,0 +1,13 @@
+<window width="470" height="500" bgcolor = "black">
+	<font face="Verdana" color="cyan" size="5">
+		<b>Hansi Kursch</b>
+	</font>
+	<br/><br/>
+	<font face="Verdana" color="white" size="3">
+<br/><font face="Verdana" color="cyan" size="3"><b>Data di nascita:</b></font> 8 settembre 1968
+<br/><font face="Verdana" color="cyan" size="3"><b>Luogo di nascita:</b></font> Krefeld
+<br/><font face="Verdana" color="cyan" size="3"><b>Stato civile:</b></font> Sposato con un figlio
+<br/><font face="Verdana" color="cyan" size="3"><b>Strumento:</b></font> Chitarra
+<br/><font face="Verdana" color="cyan" size="3"><b>Note:</b></font> Il suo libro preferito &#233; "I pilastri della Terra" di Ken Follet, mentre i suoi gruppi musicali preferiti sono Iron Maiden, Black Sabbath & Pink Floyd.
+	</font>
+</window>
