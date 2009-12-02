@@ -23,7 +23,7 @@
 		<region id="region_album_10" top="525" left="430" width="80" height="80"/>
 		<region id="region_album_grande" top="410" left="215" width="180" height="180" z-index="2"/>
 		<region id="region_testo" top="80" left="130" width="470" height="420" z-index="1"/>
-		<region id="region_avanti" top="540" left="500" width="100" height="50"/>
+		<region id="region_avanti" top="540" left="520" width="80" height="50"/>
    </layout>
    <transition id="fade" dur="1s" type="fade" />
   </head>
@@ -52,76 +52,76 @@
 		</par>
 		<img region="region_album_2" begin="66" dur="indefinite" fit="fill" src="media/img/followtheblind.jpg"/>
 		
-		<par begin="8s" dur="6s">
+		<par begin="71s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/talesfromtwillight.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,185" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,270" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>		
-		<img region="region_album_3" begin="13s" dur="indefinite" fit="fill" src="media/img/talesfromtwillight.jpg"/>
+		<img region="region_album_3" begin="77s" dur="indefinite" fit="fill" src="media/img/talesfromtwillight.jpg"/>
 		
-		<par begin="8s" dur="6s">
+		<par begin="81s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/somewherefarbeyond.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,185" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,355" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
-		<img region="region_album_4" begin="15s" dur="indefinite" fit="fill" transIn="fade" src="media/img/somewherefarbeyond.jpg"/>
+		<img region="region_album_4" begin="87s" dur="indefinite" fit="fill" src="media/img/somewherefarbeyond.jpg"/>
 		
-		<par begin="8s" dur="6s">
+		<par begin="97s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/tokyotales.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,185" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,440" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
-		<img region="region_album_5" begin="10s" dur="indefinite" fit="fill" transIn="fade" src="media/img/tokyotales.jpg"/>
+		<img region="region_album_5" begin="103s" dur="indefinite" fit="fill" src="media/img/tokyotales.jpg"/>
 		
-		<par begin="8s" dur="6s">
+		<par begin="107s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/imaginationsfromother.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,185" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="90,525" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
-		<img region="region_album_6" begin="10s" dur="indefinite" fit="fill" transIn="fade" src="media/img/imaginationsfromother.jpg"/>
+		<img region="region_album_6" begin="113s" dur="indefinite" fit="fill" src="media/img/imaginationsfromother.jpg"/>
 		
-		<par begin="8s" dur="6s">
+		<par begin="137s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/forgottentales.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,185" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="175,525" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
-		<img region="region_album_7" begin="12s" dur="indefinite" fit="fill" transIn="fade" src="media/img/forgottentales.jpg"/>
+		<img region="region_album_7" begin="143s" dur="indefinite" fit="fill" src="media/img/forgottentales.jpg"/>
 		
-		<par begin="8s" dur="6s">
+		<par begin="149s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/nightfall.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,185" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="260,525" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
-		<img region="region_album_8" begin="15s" dur="indefinite" fit="fill" transIn="fade" src="media/img/nightfall.jpg"/>
+		<img region="region_album_8" begin="155s" dur="indefinite" fit="fill" src="media/img/nightfall.jpg"/>
 		
-		<par begin="8s" dur="6s">
+		<par begin="168s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/opera.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,185" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="345,525" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
-		<img region="region_album_9" dur="indefinite" fit="fill" transIn="fade" src="media/img/opera.jpg"/>
+		<img region="region_album_9" begin="174s" dur="indefinite" fit="fill" src="media/img/opera.jpg"/>
 		
-		<par begin="8s" dur="6s">
+		<par begin="193s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/atwistinthemyth.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,185" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="430,525" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
-		<img region="region_album_10" dur="indefinite" fit="fill" transIn="fade" src="media/img/atwistinthemyth.jpg"/>
+		<img region="region_album_10" begin="199s" dur="indefinite" fit="fill" src="media/img/atwistinthemyth.jpg"/>
 
 		
 		
 		<!-- --------------------- Sequenza della storia --------------------- -->
 		
 		<seq>
-			<par id="par_storia_1">
+			<par id="par_storia_1" dur="70s">
  				<audio id="audio_1" src="media/audio/origini.mp3"/>
 				
 				<textstream id="storia_1" region="region_testo" src="media/testo/storia_1.rt" />
@@ -131,8 +131,8 @@
                 </a>
 			</par>
 	
-			<par id="par_storia_2" dur="5s">
-<!-- 				<audio id="audio_2" src="media/audio/successo1.mp3"/> -->
+			<par id="par_storia_2" dur="34s">			
+ 				<audio id="audio_2" src="media/audio/Successo1.mp3"/>
 				
 				<textstream id="storia_2" region="region_testo" src="media/testo/storia_2.rt"/>
 				
@@ -141,8 +141,8 @@
                 </a>
 			</par>
 			
-			<par id="par_storia_2_2" dur="5s">
-				<!--<audio id="audio_1" src="media/audio/successo2.mp3"/>-->
+			<par id="par_storia_2_2" dur="54s">
+				<audio id="audio_2_2" src="media/audio/Successo2.mp3"/>
 				
 				<textstream id="storia_2_2" region="region_testo" src="media/testo/storia_2_2.rt"/>
 				
@@ -151,13 +151,13 @@
                 </a>
 			</par>
 		
-			<par id="par_storia_3" dur="5s">
-				<!--<audio id="audio_1" src="media/audio/anni_recenti.mp3"/>-->
+			<par id="par_storia_3">
+				<audio id="audio_3" src="media/audio/Anni_recenti.mp3"/>
 				
 				<textstream id="storia_3" region="region_testo" src="media/testo/storia_3.rt"/>
 				
 				<a href="#par_storia_1">
-					<img id="bottone_repeat" region="region_avanti" fit="meet" src="media/testo/repeat.gif"/>
+					<img id="bottone_repeat" begin="57s" region="region_avanti" fit="meet" src="media/testo/repeat.gif"/>
                	</a>
 			</par>
         </seq>
