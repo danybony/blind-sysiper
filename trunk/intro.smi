@@ -9,33 +9,45 @@
    <meta name="Date" content="10 Dicembre 2009" />
    <layout>
     <root-layout  width="610" height="610" />
-    		<region id="region_titolo" top="0" left="5" width="600" height="500" />
-		<region id="region_centro" top="150" left="100" width="400" height="200" />
+    	<region id="region_titolo" top="0" left="5" width="600" height="500" />
+		<region id="region_testo_centro" top="150" left="100" width="400" height="200" />
+		<region id="region_img_centro" top="130" left="60" width="480" height="255" />
 		<region id="region_logo_movimento" top="190" left="50" width="500" height="123" />
 		<region id="region_logo_fermo" top="5" left="350" width="200" height="50" />
+		<region id="region_progetto" top="340" left="160" width="300" height="100" />
 		<region id="region_skip" top="470" left="480" width="100" height="25" />
    </layout>
    <transition id="fade" dur="1s" type="fade" />
+   <transition id="fade_veloce" dur="0.5s" type="fade" />
   </head>
   <body>
      <par> 
 		<!-- Introduzione -->
 		<seq id="intro">
-			<audio id="saluto_1" src="media/audio/hi1.mp3"/>
+			<par>
+				<img id="img_saluto_1" region="region_img_centro" transIn="fade_veloce" transOut="fade_veloce" src="media/img/saluto1.jpg" dur="2s"/>
+				<audio id="saluto_1" begin="0.5s" src="media/audio/hi1.mp3"/>
+			</par>
 			
 			<par dur="4s">
-				<img id="testo_nomi" region="region_centro" transIn="fade" transOut="fade" src="media/testo/nomi.gif" dur="4s"/>
+				<img id="testo_nomi" region="region_testo_centro" transIn="fade" transOut="fade" src="media/testo/nomi.gif" dur="4s"/>
 				<audio id="folla_1" src="media/audio/folla1.mp3"/>
 			</par>
 			
-			<audio id="saluto_2" transIn="fade" transOut="fade" src="media/audio/hi2.mp3"/>
+			<par>
+				<img id="img_saluto_2" region="region_img_centro" transIn="fade_veloce" transOut="fade_veloce" src="media/img/saluto2.jpg" dur="2s"/>
+				<audio id="saluto_2" begin="0.5s" src="media/audio/hi2.mp3"/>
+			</par>
 			
 			<par>
-				<img id="testo_present" region="region_centro" transIn="fade" transOut="fade" src="media/testo/present.gif" dur="4s"/>
+				<img id="testo_present" region="region_testo_centro" transIn="fade" transOut="fade" src="media/testo/present.gif" dur="4s"/>
 				<audio id="folla_2" src="media/audio/folla2.mp3"/>
 			</par>
 			
-			<audio id="saluto_3" src="media/audio/hi3.mp3"/>
+			<par>
+				<img id="img_saluto_3" region="region_img_centro" transIn="fade_veloce" transOut="fade_veloce" src="media/img/saluto3.jpg" dur="2s"/>
+				<audio id="saluto_3" begin="0.5s" src="media/audio/hi3.mp3"/>
+			</par>
 			
 			<par>
 				<seq>
@@ -44,7 +56,8 @@
 						<img id="logo_grande" region="region_logo_movimento" fit="fill" src="media/testo/logo.gif" dur="6s" fill="transition"/>
 						<animateMotion targetElement="region_logo_movimento" from="-200,-250" to="50,190" dur="3s" />
 						<animate targetElement="region_logo_movimento" attributeName="width" values="1000; 500" dur="3s"/>
-						<animate targetElement="region_logo_movimento" attributeName="height" values="246; 123" dur="3s"/>				
+						<animate targetElement="region_logo_movimento" attributeName="height" values="246; 123" dur="3s"/>	
+						<img id="testo_progetto" region="region_progetto" fit="fill" transIn="fade" transOut="fade" src="media/testo/progetto.gif" dur="4s" begin="2s"/>
 					</par>
 					
 					<!-- Sposta il logo nella posizione finale -->
