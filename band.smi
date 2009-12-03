@@ -9,15 +9,15 @@
    <meta name="Date" content="10 Dicembre 2009" />
    <layout>
     <root-layout  width="610" height="610" />
-	<region id="region_sfondo" top="60" left="5" width="600" height="550"/>
+	<region id="region_sfondo" top="40" left="5" width="600" height="570"/>
 	<region id="region_logo_fermo" top="10" left="350" width="200" height="50"/>
 	<region id="region_indietro" top="10" left="30" width="150" height="30"/>
 	<region id="region_hansi" top="80" left="10" width="100" height="100"/>
     <region id="region_andre" top="200" left="10" width="100" height="100"/>
     <region id="region_marcus" top="320" left="10" width="100" height="100"/>
     <region id="region_fred" top="440" left="10" width="100" height="100"/>
-	<region id="region_foto" top="80" left="260" width="200" height="200"/>
-	<region id="region_testo" top="300" left="130" width="470" height="300"/>
+	<region id="region_foto" top="130" left="260" width="200" height="200"/>
+	<region id="region_testo" top="350" left="130" width="430" height="200"/>
    </layout>
    <transition id="fade" dur="1s" type="fade" />
   </head>
@@ -27,7 +27,7 @@
 			<img id="bottone_indietro" region="region_indietro" dur="indefinite" fit="fill" src="media/testo/indietro.gif"/>
 		</a>	
 		<img id="logo" region="region_logo_fermo" dur="indefinite" fit="fill" src="media/testo/logo.gif"/>
-<!-- 		<img id="sfondo" region="region_sfondo" dur="indefinite" transIn="fade" fit="fill" src="media/img/in-the-forest.jpg"/> -->
+		<img id="sfondo" region="region_sfondo" dur="indefinite" fit="fill" src="media/img/sfondo.gif"/>
 		<img id="opt_hansi" region="region_hansi" dur="indefinite" transIn="fade" fit="meet" src="media/img/hansi.jpg"/>
 		<img id="opt_andre" region="region_andre" dur="indefinite" transIn="fade" fit="meet" src="media/img/andre.jpg"/>
 		<img id="opt_marcus" region="region_marcus" dur="indefinite" transIn="fade" fit="meet" src="media/img/marcus.jpg"/>

@@ -9,18 +9,21 @@
    <meta name="Date" content="10 Dicembre 2009" />
    <layout>
 	<root-layout  width="610" height="610" />
-		<region id="region_sfondo" top="60" left="0" width="610" height="290"/>
-		<region id="region_logo_fermo" top="5" left="350" width="200" height="50" />
-		<region id="region_scelta1" top="370" left="40" width="150" height="100"/>
-		<region id="region_scelta2" top="370" left="230" width="150" height="100"/>
-		<region id="region_scelta3" top="370" left="420" width="150" height="100"/>
+		<region id="region_sfondo" top="40" left="0" width="610" height="570" z-index="2"/>
+		<region id="region_centrale" top="90" left="0" width="610" height="290" z-index="1"/>
+		<region id="region_logo_fermo" top="5" left="350" width="200" height="50"/>
+		<region id="region_scelta1" top="380" left="40" width="150" height="100" z-index="3"/>
+		<region id="region_scelta2" top="380" left="230" width="150" height="100" z-index="3"/>
+		<region id="region_scelta3" top="380" left="420" width="150" height="100" z-index="3"/>
    </layout>
    <transition id="fade" dur="1s" type="fade" />
   </head>
   <body>
 	<par dur="indefinite">
 		<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif"/>
-		<img id="sfondo" region="region_sfondo" transIn="fade" fit="fill" src="media/img/sfondo_menu.jpg"/>
+		<img id="sfondo" region="region_sfondo" fit="fill" src="media/img/sfondo.gif"/>
+		
+		<img id="img_centrale" region="region_centrale" transIn="fade" fit="fill" src="media/img/sfondo_menu.jpg"/>
 
 		<a href="band.smi" show="replace" >
 			<img id="opt1" region="region_scelta1" transIn="fade" fit="meet" src="media/testo/band.gif"/>
