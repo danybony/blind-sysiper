@@ -14,13 +14,16 @@
         
         <region id="region_lyrics" top="470" left="0" width="610" height="140" z-index="1"/>
         <region id="region_lyrics_over" top="470" left="0" width="610" height="140" z-index="2"/>
-        <region id="regon_lyrics_ref"  top="450" left="80" width="280" height="70" z-index="2"/>
-        <region id="regon_lyrics_ref2"  top="450" left="200" width="280" height="70" z-index="2"/>
+        <region id="region_lyrics_ref"  top="450" left="80" width="280" height="70" z-index="2"/>
+        <region id="region_lyrics_ref2"  top="450" left="300" width="280" height="70" z-index="2"/>
+        <region id="region_lyrics_ref3"  top="520" left="80" width="280" height="70" z-index="2"/>
+        <region id="region_lyrics_ref4"  top="520" left="300" width="280" height="70" z-index="2"/>
         <region id="region_video_lotr" top="10" left="50" width="500" height="500" z-index="1"/>	
    </layout>
    <!-- Left-to-right transitions -->
    <transition id="wipe2s" type="barWipe" subtype="leftToRight" dur="2s"/>
    <transition id="wipe3s" type="barWipe" subtype="leftToRight" dur="3s"/>
+   <transition id="wipe4s" type="barWipe" subtype="leftToRight" dur="4s"/>
    <transition id="wipe6s" type="barWipe" subtype="leftToRight" dur="6s"/>
    <transition id="fade" dur="2s" type="fade" />
   </head>
@@ -77,29 +80,366 @@
 	
 	<!-- Which cry... -->
 	<img id="lyric10" dur="2s" begin="52s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/10.png"/>
-	<img id="lyric11r" dur="2s" begin="52s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/10r.png" transIn="wipe2s"/>
+	<img id="lyric10r" dur="2s" begin="52s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/10r.png" transIn="wipe2s"/>
 	
 	<!-- Solo Marcus -->
 	<img id="lyricsolomarcus1" dur="14s" begin="55s" region="region_lyrics" top="0" fit="meet" fill="remove" src="media/lyrics/solomarcus1.png"/>
 	
-	<!-- REF. -->
+	<!-- REF. 1x -->
 	<!-- Slow -->
 	<par id="ref1" dur="2s" begin="70s">
-		<img id="lyricsref1" region="regon_lyrics_ref" fit="fill" src="media/lyrics/ref1.png" dur="2s" fill="transition"/>
-		<animateMotion targetElement="regon_lyrics_ref" from="220,415" to="80,450" dur="1s" />
-		<animate targetElement="regon_lyrics_ref" attributeName="width" values="1; 280" dur="1s"/>
-		<animate targetElement="regon_lyrics_ref" attributeName="height" values="1; 70" dur="1s"/>	
+		<img id="lyricsref1" region="region_lyrics_ref" fit="fill" src="media/lyrics/ref1.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref" from="220,435" to="80,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref" attributeName="height" values="1; 70" dur="1s"/>	
 	</par>
 	
 	<!-- down -->
 	<par id="ref2" dur="2s" begin="71s">
-		<img id="lyricsref2" region="regon_lyrics_ref2" fit="fill" src="media/lyrics/ref2.png" dur="2s" fill="transition"/>
-		<animateMotion targetElement="regon_lyrics_ref2" from="340,415" to="200,450" dur="1s" />
-		<animate targetElement="regon_lyrics_ref2" attributeName="width" values="1; 280" dur="1s"/>
-		<animate targetElement="regon_lyrics_ref2" attributeName="height" values="1; 70" dur="1s"/>	
+		<img id="lyricsref2" region="region_lyrics_ref2" fit="fill" src="media/lyrics/ref2.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref2" from="340,435" to="340,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref2" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref2" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+
+	<!-- and I sail -->
+	<par id="ref3" dur="2s" begin="72s">
+		<img id="lyricsref3" region="region_lyrics_ref3" fit="fill" src="media/lyrics/ref3.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref3" from="220,505" to="80,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref3" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref3" attributeName="height" values="1; 70" dur="1s"/>	
 	</par>
 	
-	<!-- /REF -->
+	<!-- on the river -->
+	<par id="ref4" dur="2s" begin="73s">
+		<img id="lyricsref4" region="region_lyrics_ref4" fit="fill" src="media/lyrics/ref4.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref4" from="340,505" to="340,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref4" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref4" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- Slow -->
+	<par id="ref5" dur="2s" begin="74s">
+		<img id="lyricsref5" region="region_lyrics_ref" fit="fill" src="media/lyrics/ref1.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref" from="220,435" to="80,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- down -->
+	<par id="ref6" dur="2s" begin="75s">
+		<img id="lyricsref6" region="region_lyrics_ref2" fit="fill" src="media/lyrics/ref2.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref2" from="340,435" to="340,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref2" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref2" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+
+	<!-- and I walk -->
+	<par id="ref7" dur="2s" begin="76s">
+		<img id="lyricsref7" region="region_lyrics_ref3" fit="fill" src="media/lyrics/ref7.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref3" from="220,505" to="80,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref3" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref3" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- to the hill -->
+	<par id="ref8" dur="2s" begin="77s">
+		<img id="lyricsref8" region="region_lyrics_ref4" fit="fill" src="media/lyrics/ref8.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref4" from="340,505" to="340,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref4" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref4" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+
+	
+	<!-- /REF 1x -->
+
+	<!-- REF. 2x -->
+	<!-- Slow -->
+	<par id="ref9" dur="2s" begin="78s">
+		<img id="lyricsref9" region="region_lyrics_ref" fit="fill" src="media/lyrics/ref1.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref" from="220,435" to="80,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- down -->
+	<par id="ref10" dur="2s" begin="79s">
+		<img id="lyricsref10" region="region_lyrics_ref2" fit="fill" src="media/lyrics/ref2.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref2" from="340,435" to="340,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref2" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref2" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+
+	<!-- and I sail -->
+	<par id="ref11" dur="2s" begin="80s">
+		<img id="lyricsref11" region="region_lyrics_ref3" fit="fill" src="media/lyrics/ref3.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref3" from="220,505" to="80,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref3" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref3" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- on the river -->
+	<par id="ref12" dur="2s" begin="81s">
+		<img id="lyricsref12" region="region_lyrics_ref4" fit="fill" src="media/lyrics/ref4.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref4" from="340,505" to="340,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref4" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref4" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- Slow -->
+	<par id="ref13" dur="2s" begin="82s">
+		<img id="lyricsref13" region="region_lyrics_ref" fit="fill" src="media/lyrics/ref1.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref" from="220,435" to="80,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- down -->
+	<par id="ref14" dur="2s" begin="83s">
+		<img id="lyricsref14" region="region_lyrics_ref2" fit="fill" src="media/lyrics/ref2.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref2" from="340,435" to="340,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref2" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref2" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+
+	<!-- and I walk -->
+	<par id="ref15" dur="2s" begin="84s">
+		<img id="lyricsref15" region="region_lyrics_ref3" fit="fill" src="media/lyrics/ref7.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref3" from="220,505" to="80,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref3" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref3" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- to the hill -->
+	<par id="ref16" dur="2s" begin="85s">
+		<img id="lyricsref16" region="region_lyrics_ref4" fit="fill" src="media/lyrics/ref8.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref4" from="340,505" to="340,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref4" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref4" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+
+	
+	<!-- /REF 2x -->
+	
+	<!-- And there's no way out... -->
+	<img id="lyric11" dur="3s" begin="87s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/11.png"/>
+	<img id="lyric11r" dur="3s" begin="87s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/11r.png" transIn="wipe3s"/>
+
+	<!-- Mordor -->
+	<par id="mordor" dur="6s" begin="101s">
+	<img id="lyricsmordor" region="region_lyrics" fit="fill" src="media/lyrics/mordor.png" dur="6s" fill="transition"/>
+	<animateMotion targetElement="region_lyrics" from="305,540" to="0,470" dur="4s" />
+	<animate targetElement="region_lyrics" attributeName="width" values="1; 610" dur="4s"/>
+	<animate targetElement="region_lyrics" attributeName="height" values="1; 140" dur="4s"/>	
+	</par>
+	
+	<!-- Darklands under Sauron's spell -->
+	<img id="lyric12" dur="6s" begin="107s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/12.png"/>
+	<img id="lyric12r" dur="6s" begin="107s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/12r.png" transIn="wipe6s"/>
+	
+	<!-- threatened a long time -->
+	<img id="lyric13" dur="3s" begin="115s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/13.png"/>
+	<img id="lyric13r" dur="2s" begin="116s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/13r.png" transIn="wipe2s"/>
+	
+	<!-- threatened a long time -->
+	<img id="lyric13bis" dur="3s" begin="117s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/13.png"/>
+	<img id="lyric13rbis" dur="2s" begin="118s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/13r.png" transIn="wipe2s"/>
+	
+	<!-- Seven rings to the gnomes -->
+	<img id="lyric14" dur="2s" begin="124s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/14.png"/>
+	<img id="lyric14r" dur="2s" begin="124s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/14r.png" transIn="wipe2s"/>
+	<img id="lyric15p" dur="2s" top="70" begin="124s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/15.png"/>
+	
+	<!-- In their halls made of stone -->
+	<img id="lyric15" dur="2s" begin="126s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/15.png"/>
+	<img id="lyric15r" dur="2s" begin="126s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/15r.png" transIn="wipe2s"/>
+
+	<!-- Into the valley -->
+	<img id="lyric16" dur="2s" begin="131s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/16.png"/>
+	<img id="lyric16r" dur="2s" begin="131s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/16r.png" transIn="wipe2s"/>
+	
+	<!-- I feel -->
+	<img id="lyric17" dur="2s" begin="134s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/17.png"/>
+	<img id="lyric17r" dur="2s" begin="134s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/17r.png" transIn="wipe2s"/>
+	<img id="lyric18p" dur="2s" top="70" begin="134s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/18.png" />
+	
+	<!-- down -->
+	<img id="lyric18" dur="3s" begin="137s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/18.png"/>
+	<img id="lyric18r" dur="3s" begin="137s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/18r.png" transIn="wipe3s"/>
+	
+	<!-- One ring for the dark lord's hand -->
+	<img id="lyric19" dur="4s" begin="140s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/19.png"/>
+	<img id="lyric19r" dur="3s" begin="141s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/19r.png" transIn="wipe3s"/>
+	<img id="lyric20p" dur="5s" top="70" begin="140s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/20.png" />
+	
+	<!-- Sitting on his throne -->
+	<img id="lyric20" dur="2s" begin="145s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/20.png"/>
+	<img id="lyric20r" dur="2s" begin="145s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/20r.png" transIn="wipe2s"/>
+	<img id="lyric21p" dur="2s" top="70" begin="145s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/21.png" />
+	
+	<!-- In the land so dark -->
+	<img id="lyric21" dur="4s" begin="147s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/21.png"/>
+	<img id="lyric21r" dur="4s" begin="147s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/21r.png" transIn="wipe4s"/>
+	<img id="lyric22p" dur="4s" top="70" begin="147s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/22.png" />
+	
+	<!-- Where I have to go -->
+	<img id="lyric22" dur="3s" begin="151s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/22.png"/>
+	<img id="lyric22r" dur="3s" begin="151s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/22r.png" transIn="wipe3s"/>
+	
+	<!-- Solo Marcus -->
+	<img id="lyricsolomarcus2" dur="14s" begin="155s" region="region_lyrics" top="0" fit="meet" fill="remove" src="media/lyrics/solomarcus1.png"/>
+	
+	<!-- REF. 3x -->
+	<!-- Slow -->
+	<par id="ref17" dur="2s" begin="170s">
+		<img id="lyricsref17" region="region_lyrics_ref" fit="fill" src="media/lyrics/ref1.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref" from="220,435" to="80,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- down -->
+	<par id="ref18" dur="2s" begin="171s">
+		<img id="lyricsref18" region="region_lyrics_ref2" fit="fill" src="media/lyrics/ref2.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref2" from="340,435" to="340,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref2" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref2" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+
+	<!-- and I sail -->
+	<par id="ref19" dur="2s" begin="172s">
+		<img id="lyricsref19" region="region_lyrics_ref3" fit="fill" src="media/lyrics/ref3.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref3" from="220,505" to="80,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref3" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref3" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- on the river -->
+	<par id="ref20" dur="2s" begin="173s">
+		<img id="lyricsref20" region="region_lyrics_ref4" fit="fill" src="media/lyrics/ref4.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref4" from="340,505" to="340,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref4" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref4" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- Slow -->
+	<par id="ref21" dur="2s" begin="174s">
+		<img id="lyricsref21" region="region_lyrics_ref" fit="fill" src="media/lyrics/ref1.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref" from="220,435" to="80,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- down -->
+	<par id="ref22" dur="2s" begin="175s">
+		<img id="lyricsref22" region="region_lyrics_ref2" fit="fill" src="media/lyrics/ref2.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref2" from="340,435" to="340,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref2" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref2" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+
+	<!-- and I walk -->
+	<par id="ref23" dur="2s" begin="176s">
+		<img id="lyricsref23" region="region_lyrics_ref3" fit="fill" src="media/lyrics/ref7.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref3" from="220,505" to="80,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref3" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref3" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- to the hill -->
+	<par id="ref24" dur="2s" begin="177s">
+		<img id="lyricsref24" region="region_lyrics_ref4" fit="fill" src="media/lyrics/ref8.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref4" from="340,505" to="340,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref4" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref4" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+
+	
+	<!-- /REF 3x -->
+
+	<!-- REF. 4x -->
+	<!-- Slow -->
+	<par id="ref25" dur="2s" begin="178s">
+		<img id="lyricsref25" region="region_lyrics_ref" fit="fill" src="media/lyrics/ref1.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref" from="220,435" to="80,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- down -->
+	<par id="ref26" dur="2s" begin="179s">
+		<img id="lyricsref26" region="region_lyrics_ref2" fit="fill" src="media/lyrics/ref2.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref2" from="340,435" to="340,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref2" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref2" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+
+	<!-- and I sail -->
+	<par id="ref27" dur="2s" begin="180s">
+		<img id="lyricsref27" region="region_lyrics_ref3" fit="fill" src="media/lyrics/ref3.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref3" from="220,505" to="80,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref3" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref3" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- on the river -->
+	<par id="ref28" dur="2s" begin="181s">
+		<img id="lyricsref28" region="region_lyrics_ref4" fit="fill" src="media/lyrics/ref4.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref4" from="340,505" to="340,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref4" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref4" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- Slow -->
+	<par id="ref29" dur="2s" begin="182s">
+		<img id="lyricsref29" region="region_lyrics_ref" fit="fill" src="media/lyrics/ref1.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref" from="220,435" to="80,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- down -->
+	<par id="ref30" dur="2s" begin="183s">
+		<img id="lyricsref30" region="region_lyrics_ref2" fit="fill" src="media/lyrics/ref2.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref2" from="340,435" to="340,450" dur="1s" />
+		<animate targetElement="region_lyrics_ref2" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref2" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+
+	<!-- and I walk -->
+	<par id="ref31" dur="2s" begin="184s">
+		<img id="lyricsref31" region="region_lyrics_ref3" fit="fill" src="media/lyrics/ref7.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref3" from="220,505" to="80,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref3" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref3" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+	
+	<!-- to the hill -->
+	<par id="ref32" dur="2s" begin="185s">
+		<img id="lyricsref32" region="region_lyrics_ref4" fit="fill" src="media/lyrics/ref8.png" dur="2s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics_ref4" from="340,505" to="340,520" dur="1s" />
+		<animate targetElement="region_lyrics_ref4" attributeName="width" values="1; 280" dur="1s"/>
+		<animate targetElement="region_lyrics_ref4" attributeName="height" values="1; 70" dur="1s"/>	
+	</par>
+
+	
+	<!-- /REF 4x -->
+	
+	<!-- Lord of the Rings 
+	<par id="parlotr" dur="4s" begin="188s">
+		<img id="lyricslotr" region="region_lyrics" fit="fill" src="media/lyrics/LOTR.png" dur="4s" fill="transition"/>
+		<animateMotion targetElement="region_lyrics" ffrom="305,540" to="0,470" dur="4s" />
+		<animate targetElement="region_lyrics" attributeName="width" values="1; 610" dur="4s"/>
+		<animate targetElement="region_lyrics" attributeName="height" values="1; 140" dur="4s"/>	
+	</par> -->
+	
+	<!-- Mordor -->
+	<par id="mordor2" dur="6s" begin="188s">
+	<img id="lyricsmordor2" region="region_lyrics" fit="fill" src="media/lyrics/LOTR.png" dur="6s" fill="transition"/>
+	<animateMotion targetElement="region_lyrics" from="305,540" to="0,470" dur="4s" />
+	<animate targetElement="region_lyrics" attributeName="width" values="1; 610" dur="4s"/>
+	<animate targetElement="region_lyrics" attributeName="height" values="1; 140" dur="4s"/>	
+	</par>
 	
         </par>	
 	
