@@ -12,19 +12,19 @@
 		<region id="region_logo_fermo" top="10" left="350" width="200" height="50" />
 		<region id="region_sfondo" top="40" left="5" width="600" height="570"/>
 		<region id="region_indietro" top="10" left="30" width="150" height="30"/>
-		<region id="region_album_1" top="100" left="5" width="80" height="80"/>
-		<region id="region_album_2" top="185" left="5" width="80" height="80"/>
-		<region id="region_album_3" top="270" left="5" width="80" height="80"/>
-		<region id="region_album_4" top="355" left="5" width="80" height="80"/>
-		<region id="region_album_5" top="440" left="5" width="80" height="80"/>
-		<region id="region_album_6" top="525" left="90" width="80" height="80"/>
-		<region id="region_album_7" top="525" left="175" width="80" height="80"/>
-		<region id="region_album_8" top="525" left="260" width="80" height="80"/>
-		<region id="region_album_9" top="525" left="345" width="80" height="80"/>
-		<region id="region_album_10" top="525" left="430" width="80" height="80"/>
+		<region id="region_album_1" top="140" left="45" width="80" height="80"/>
+		<region id="region_album_2" top="225" left="45" width="80" height="80"/>
+		<region id="region_album_3" top="310" left="45" width="80" height="80"/>
+		<region id="region_album_4" top="395" left="45" width="80" height="80"/>
+		<region id="region_album_5" top="480" left="45" width="80" height="80"/>
+		<region id="region_album_6" top="480" left="130" width="80" height="80"/>
+		<region id="region_album_7" top="480" left="215" width="80" height="80"/>
+		<region id="region_album_8" top="480" left="300" width="80" height="80"/>
+		<region id="region_album_9" top="480" left="385" width="80" height="80"/>
+		<region id="region_album_10" top="480" left="470" width="80" height="80"/>
 		<region id="region_album_grande" top="410" left="215" width="180" height="180" z-index="2"/>
-		<region id="region_testo" top="80" left="130" width="470" height="420" z-index="1"/>
-		<region id="region_avanti" top="540" left="520" width="80" height="50"/>
+		<region id="region_testo" top="100" left="130" width="440" height="370" z-index="1"/>
+		<region id="region_avanti" top="450" left="475" width="80" height="50"/>
    </layout>
    <transition id="fade" dur="1s" type="fade" />
   </head>
@@ -40,7 +40,7 @@
 		
 		<par begin="45s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/batalionsofear.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,100" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="45,140" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
@@ -48,7 +48,7 @@
 		
 		<par begin="60s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/followtheblind.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,185" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="45,225" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
@@ -56,7 +56,7 @@
 		
 		<par begin="71s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/talesfromtwillight.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,270" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="45,310" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>		
@@ -64,7 +64,7 @@
 		
 		<par begin="81s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/somewherefarbeyond.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,355" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="45,395" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
@@ -72,7 +72,7 @@
 		
 		<par begin="97s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/tokyotales.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="5,440" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="45,480" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
@@ -80,7 +80,7 @@
 		
 		<par begin="107s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/imaginationsfromother.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="90,525" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="130,480" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
@@ -88,7 +88,7 @@
 		
 		<par begin="137s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/forgottentales.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="175,525" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="215,480" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
@@ -96,7 +96,7 @@
 		
 		<par begin="149s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/nightfall.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="260,525" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="300,480" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
@@ -104,7 +104,7 @@
 		
 		<par begin="168s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/opera.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="345,525" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="385,480" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
@@ -112,7 +112,7 @@
 		
 		<par begin="193s" dur="6s">
 			<img region="region_album_grande" dur="6s" fit="fill" transIn="fade" src="media/img/atwistinthemyth.jpg"/>			
-			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="430,525" dur="2s"/>
+			<animateMotion targetElement="region_album_grande" begin="4s" from="215,410" to="470,480" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="width" values="180; 80" dur="2s"/>
 			<animate targetElement="region_album_grande" begin="4s" attributeName="height" values="180; 80" dur="2s"/>
 		</par>
