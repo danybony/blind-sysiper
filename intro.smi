@@ -30,7 +30,7 @@
 			</par>
 			
 			<par dur="4s">
-				<img id="testo_nomi" region="region_testo_centro" transIn="fade" transOut="fade" src="media/testo/nomi.gif" dur="4s"/>
+				<img id="testo_nomi" region="region_testo_centro" transIn="fade" transOut="fade" src="media/testo/nomi.png" dur="4s"/>
 				<audio id="folla_1" src="media/audio/folla1.mp3"/>
 			</par>
 			
@@ -40,7 +40,7 @@
 			</par>
 			
 			<par>
-				<img id="testo_present" region="region_testo_centro" transIn="fade" transOut="fade" src="media/testo/present.gif" dur="4s"/>
+				<img id="testo_present" region="region_testo_centro" transIn="fade" transOut="fade" src="media/testo/present.png" dur="4s"/>
 				<audio id="folla_2" src="media/audio/folla2.mp3"/>
 			</par>
 			
@@ -79,7 +79,7 @@
 		</seq>	
 
 		<a href="menu.smi" show="replace" >
-			<img id="img_skip" region="region_skip" fit="fill" src="media/testo/skip.gif"/>
+			<img id="img_skip" region="region_skip" fit="fill" src="media/testo/skip.png"/>
 		</a>		
         
      </par>

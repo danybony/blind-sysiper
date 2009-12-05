@@ -32,6 +32,15 @@
   </head>
   
   <body>
+  
+  <excl>
+  <priorityClass id="prio1" peers="pause">
+    <par id="go_on">
+	<a href="#pausa" sourcePlaystate="pause" begin="0s" accesskey="p">
+		<img id="pausa" region="region_pausavanti" fit="fill" src="media/testo/pausa.png"/>
+	</a>
+    </par>
+  
     <par id="karaoke">
     
 	<par id="menu">
@@ -39,7 +48,7 @@
 			<img id="bottone_indietro" region="region_indietro" fit="fill" src="media/testo/indietro.gif"/>
 		</a>
 		<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif"/>
-		<a href="#" sourcePlaystate="pause" begin="0s" accesskey="p">
+		<a href="#go_on" sourcePlaystate="pause" begin="0s" accesskey="p">
 			<img id="pausa" region="region_pausavanti" fit="fill" src="media/testo/pausa.png"/>
 		</a>
 	</par>
@@ -454,6 +463,9 @@
 	</a>
 	
       </seq>
+      <!-- end karaoke -->
     </par>
+    </priorityClass>
+    </excl>
   </body>
 </smil>
