@@ -10,15 +10,17 @@
    <meta name="Date" content="10 Dicembre 2009" />
    <layout>
 	<root-layout  width="610" height="610" />
-		<region id="region_sfondo" top="60" left="0" width="610" height="550" z-index="0"/>
+	<region id="region_sfondo" top="0" left="0" width="610" height="570" z-index="2"/>
+	<region id="region_logo_fermo" top="5" left="350" width="200" height="50" z-index="2"/>
+	<region id="region_indietro" top="10" left="30" width="150" height="30" z-index="2"/>
         
-        <region id="region_lyrics" top="470" left="0" width="610" height="140" z-index="1"/>
-        <region id="region_lyrics_over" top="470" left="0" width="610" height="140" z-index="2"/>
-        <region id="region_lyrics_ref"  top="450" left="80" width="280" height="70" z-index="2"/>
-        <region id="region_lyrics_ref2"  top="450" left="300" width="280" height="70" z-index="2"/>
-        <region id="region_lyrics_ref3"  top="520" left="80" width="280" height="70" z-index="2"/>
-        <region id="region_lyrics_ref4"  top="520" left="300" width="280" height="70" z-index="2"/>
-        <region id="region_video_lotr" top="10" left="50" width="500" height="500" z-index="1"/>	
+	<region id="region_lyrics" top="470" left="0" width="610" height="140" z-index="1"/>
+	<region id="region_lyrics_over" top="470" left="0" width="610" height="140" z-index="2"/>
+	<region id="region_lyrics_ref"  top="450" left="80" width="280" height="70" z-index="2"/>
+	<region id="region_lyrics_ref2"  top="450" left="300" width="280" height="70" z-index="2"/>
+	<region id="region_lyrics_ref3"  top="520" left="80" width="280" height="70" z-index="2"/>
+	<region id="region_lyrics_ref4"  top="520" left="300" width="280" height="70" z-index="2"/>
+	<region id="region_video_lotr" top="50" left="50" width="500" height="450" z-index="1"/>	
    </layout>
    <!-- Left-to-right transitions -->
    <transition id="wipe2s" type="barWipe" subtype="leftToRight" dur="2s"/>
@@ -30,7 +32,15 @@
   
   <body>
     <par>
-      <video id="video_lotr" region="region_video_lotr" transIn="fade" transOut="fade" src="media/video/lotr.rmvb" alt="Blind Guardian's Lord of the Rings song with video" fit="fill"/>
+    
+	<par id="menu">
+		<a href="menu.smi" show="replace">
+			<img id="bottone_indietro" region="region_indietro" fit="fill" src="media/testo/indietro.gif"/>
+		</a>
+		<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif"/>
+	</par>
+    
+      <video id="video_lotr" width="500" height="450" region="region_video_lotr" transIn="fade" transOut="fade" src="media/video/lotr.rmvb" alt="Blind Guardian's Lord of the Rings song with video" fit="fill"/>
     
       <seq id="karaoke">
         <par>
@@ -241,9 +251,9 @@
 	<img id="lyric13" dur="3s" begin="115s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/13.png"/>
 	<img id="lyric13r" dur="2s" begin="116s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/13r.png" transIn="wipe2s"/>
 	
-	<!-- threatened a long time -->
-	<img id="lyric13bis" dur="3s" begin="117s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/13.png"/>
-	<img id="lyric13rbis" dur="2s" begin="118s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/13r.png" transIn="wipe2s"/>
+	<!-- threatened a long time (2) -->
+	<img id="lyric13bis" dur="3s" begin="118s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/13.png"/>
+	<img id="lyric13rbis" dur="2s" begin="119s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/13r.png" transIn="wipe2s"/>
 	
 	<!-- Seven rings to the gnomes -->
 	<img id="lyric14" dur="2s" begin="124s" region="region_lyrics" fit="fill" fill="remove" src="media/lyrics/14.png"/>
@@ -359,7 +369,7 @@
 
 	<!-- REF. 4x -->
 	<!-- Slow -->
-	<par id="ref25" dur="2s" begin="178s">
+	<par id="ref25" dur="2s" begin="177s">
 		<img id="lyricsref25" region="region_lyrics_ref" fit="fill" src="media/lyrics/ref1.png" dur="2s" fill="transition"/>
 		<animateMotion targetElement="region_lyrics_ref" from="220,435" to="80,450" dur="1s" />
 		<animate targetElement="region_lyrics_ref" attributeName="width" values="1; 280" dur="1s"/>
@@ -367,7 +377,7 @@
 	</par>
 	
 	<!-- down -->
-	<par id="ref26" dur="2s" begin="179s">
+	<par id="ref26" dur="2s" begin="178s">
 		<img id="lyricsref26" region="region_lyrics_ref2" fit="fill" src="media/lyrics/ref2.png" dur="2s" fill="transition"/>
 		<animateMotion targetElement="region_lyrics_ref2" from="340,435" to="340,450" dur="1s" />
 		<animate targetElement="region_lyrics_ref2" attributeName="width" values="1; 280" dur="1s"/>
@@ -375,7 +385,7 @@
 	</par>
 
 	<!-- and I sail -->
-	<par id="ref27" dur="2s" begin="180s">
+	<par id="ref27" dur="2s" begin="179s">
 		<img id="lyricsref27" region="region_lyrics_ref3" fit="fill" src="media/lyrics/ref3.png" dur="2s" fill="transition"/>
 		<animateMotion targetElement="region_lyrics_ref3" from="220,505" to="80,520" dur="1s" />
 		<animate targetElement="region_lyrics_ref3" attributeName="width" values="1; 280" dur="1s"/>
@@ -383,7 +393,7 @@
 	</par>
 	
 	<!-- on the river -->
-	<par id="ref28" dur="2s" begin="181s">
+	<par id="ref28" dur="2s" begin="180s">
 		<img id="lyricsref28" region="region_lyrics_ref4" fit="fill" src="media/lyrics/ref4.png" dur="2s" fill="transition"/>
 		<animateMotion targetElement="region_lyrics_ref4" from="340,505" to="340,520" dur="1s" />
 		<animate targetElement="region_lyrics_ref4" attributeName="width" values="1; 280" dur="1s"/>
@@ -391,7 +401,7 @@
 	</par>
 	
 	<!-- Slow -->
-	<par id="ref29" dur="2s" begin="182s">
+	<par id="ref29" dur="2s" begin="181s">
 		<img id="lyricsref29" region="region_lyrics_ref" fit="fill" src="media/lyrics/ref1.png" dur="2s" fill="transition"/>
 		<animateMotion targetElement="region_lyrics_ref" from="220,435" to="80,450" dur="1s" />
 		<animate targetElement="region_lyrics_ref" attributeName="width" values="1; 280" dur="1s"/>
@@ -399,7 +409,7 @@
 	</par>
 	
 	<!-- down -->
-	<par id="ref30" dur="2s" begin="183s">
+	<par id="ref30" dur="2s" begin="182s">
 		<img id="lyricsref30" region="region_lyrics_ref2" fit="fill" src="media/lyrics/ref2.png" dur="2s" fill="transition"/>
 		<animateMotion targetElement="region_lyrics_ref2" from="340,435" to="340,450" dur="1s" />
 		<animate targetElement="region_lyrics_ref2" attributeName="width" values="1; 280" dur="1s"/>
@@ -407,7 +417,7 @@
 	</par>
 
 	<!-- and I walk -->
-	<par id="ref31" dur="2s" begin="184s">
+	<par id="ref31" dur="2s" begin="183s">
 		<img id="lyricsref31" region="region_lyrics_ref3" fit="fill" src="media/lyrics/ref7.png" dur="2s" fill="transition"/>
 		<animateMotion targetElement="region_lyrics_ref3" from="220,505" to="80,520" dur="1s" />
 		<animate targetElement="region_lyrics_ref3" attributeName="width" values="1; 280" dur="1s"/>
@@ -415,7 +425,7 @@
 	</par>
 	
 	<!-- to the hill -->
-	<par id="ref32" dur="2s" begin="185s">
+	<par id="ref32" dur="2s" begin="184s">
 		<img id="lyricsref32" region="region_lyrics_ref4" fit="fill" src="media/lyrics/ref8.png" dur="2s" fill="transition"/>
 		<animateMotion targetElement="region_lyrics_ref4" from="340,505" to="340,520" dur="1s" />
 		<animate targetElement="region_lyrics_ref4" attributeName="width" values="1; 280" dur="1s"/>
@@ -425,16 +435,8 @@
 	
 	<!-- /REF 4x -->
 	
-	<!-- Lord of the Rings 
-	<par id="parlotr" dur="4s" begin="188s">
-		<img id="lyricslotr" region="region_lyrics" fit="fill" src="media/lyrics/LOTR.png" dur="4s" fill="transition"/>
-		<animateMotion targetElement="region_lyrics" ffrom="305,540" to="0,470" dur="4s" />
-		<animate targetElement="region_lyrics" attributeName="width" values="1; 610" dur="4s"/>
-		<animate targetElement="region_lyrics" attributeName="height" values="1; 140" dur="4s"/>	
-	</par> -->
-	
-	<!-- Mordor -->
-	<par id="mordor2" dur="6s" begin="188s">
+	<!-- Lord of the Rings -->
+	<par id="parlotr" dur="6s" begin="188s">
 	<img id="lyricsmordor2" region="region_lyrics" fit="fill" src="media/lyrics/LOTR.png" dur="6s" fill="transition"/>
 	<animateMotion targetElement="region_lyrics" from="305,540" to="0,470" dur="4s" />
 	<animate targetElement="region_lyrics" attributeName="width" values="1; 610" dur="4s"/>

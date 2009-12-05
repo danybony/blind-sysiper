@@ -69,6 +69,7 @@
 					</par>
 				</seq>
 				
+				<audio id="wow" begin="4s" src="media/audio/wow.mp3"/>
 				<audio id="folla_3" src="media/audio/folla3.mp3"/>
 			</par>
 
