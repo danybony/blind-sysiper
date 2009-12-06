@@ -53,7 +53,7 @@
 				<img id="foto_fred" region="region_foto" src="media/img/fred_grande.jpg" fit="meet"/>
 				<textstream id="testo_fred" region="region_testo" src="media/testo/descr_fred.rt"/>
 			</par>
-        </excl>
+		</excl>
     </par>
   </body>
 </smil>
