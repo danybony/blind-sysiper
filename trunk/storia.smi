@@ -23,8 +23,8 @@
 		<region id="region_album_9" top="480" left="385" width="80" height="80"/>
 		<region id="region_album_10" top="480" left="470" width="80" height="80"/>
 		<region id="region_album_grande" top="410" left="215" width="180" height="180" z-index="2"/>
-		<region id="region_testo" top="100" left="130" width="440" height="370" z-index="1"/>
-		<region id="region_avanti" top="450" left="475" width="80" height="50"/>
+		<region id="region_testo" top="100" left="130" width="440" height="340" z-index="1"/>
+		<region id="region_avanti" top="430" left="475" width="80" height="50"/>
    </layout>
    <transition id="fade" dur="1s" type="fade" />
   </head>
@@ -123,13 +123,23 @@
 		<!-- --------------------- Sequenza della storia --------------------- -->
 		
 		<seq>
-			<par id="par_storia_1" dur="70s">
+			<par id="par_storia_1" dur="36s">
  				<audio id="audio_1" src="media/audio/origini.mp3"/>
 				
 				<textstream id="storia_1" region="region_testo" src="media/testo/storia_1.rt" />
 				
-				<a href="#par_storia_2">
+				<a href="#par_storia_1_2">
 					<img id="bottone_avanti_1" region="region_avanti" fit="meet" src="media/testo/next.gif"/>
+                </a>
+			</par>
+			
+			<par id="par_storia_1_2" dur="34s">
+ 				<audio id="audio_1_2" src="media/audio/origini2.mp3"/>
+				
+				<textstream id="storia_1_2" region="region_testo" src="media/testo/storia_1_2.rt" />
+				
+				<a href="#par_storia_2">
+					<img id="bottone_avanti_1_2" region="region_avanti" fit="meet" src="media/testo/next.gif"/>
                 </a>
 			</par>
 	
@@ -159,7 +169,7 @@
 				<textstream id="storia_3" region="region_testo" src="media/testo/storia_3.rt"/>
 				
 				<a href="#par_storia_1">
-					<img id="bottone_repeat" begin="57s" region="region_avanti" fit="meet" src="media/testo/repeat.gif"/>
+					<img id="bottone_repeat" begin="audio_3.end" region="region_avanti" fit="meet" src="media/testo/repeat.gif"/>
                	</a>
 			</par>
         </seq>
