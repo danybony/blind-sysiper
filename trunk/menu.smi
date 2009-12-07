@@ -26,35 +26,30 @@
 		<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif"/>
 		<img id="sfondo" region="region_sfondo" fit="fill" src="media/img/sfondo.gif"/>
 		
-		<!-- <par repeatCount="indefinite"> -->
-		<excl repeatCount="indefinite">
+		<excl>
 			<img id="skipbardtoskald" begin="0s;skipborntobard.activateEvent;bornmourninghall.end" end="bardsong.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
 			<img id="skipskaldtoborn" begin="skipbardtoskald.activateEvent;bardsong.end" end="skaldsshadows.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong1.png" region="music_next" />
 			<img id="skipborntobard" begin="skipskaldtoborn.activateEvent;skaldsshadows.end" end="bornmourninghall.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong2.png" region="music_next" />
 		</excl>
-		
-		<excl repeatCount="indefinite">
-		<priorityClass peers="stop">
+		<excl>
 			<audio id="bardsong" fill="remove" restart="always" begin="0s;skipborntobard.activateEvent" src="media/audio/music/The Bard's Song - In The Forest.mp3" region="sottofondo"/>
 			<audio id="skaldsshadows" restart="always" fill="remove" begin="skipbardtoskald.activateEvent" src="media/audio/music/Skalds And Shadows.mp3" region="sottofondo"/>
 			<audio id="bornmourninghall" restart="always" fill="remove" begin="skipskaldtoborn.activateEvent" src="media/audio/music/Born in a Mourning Hall.mp3" region="sottofondo"/>
-		</priorityClass>
 		</excl>
-		<!-- </par> -->
 		
-			<img id="img_centrale" region="region_centrale" transIn="fade" fit="fill" src="media/img/sfondo_menu.jpg"/>
+		<img id="img_centrale" region="region_centrale" transIn="fade" fit="fill" src="media/img/sfondo_menu.jpg"/>
 
-			<a href="band.smi" show="replace" >
-				<img id="opt1" region="region_scelta1" transIn="fade" fit="meet" src="media/testo/band.gif"/>
-			</a>
+		<a href="band.smi" show="replace" >
+			<img id="opt1" region="region_scelta1" transIn="fade" fit="meet" src="media/testo/band.gif"/>
+		</a>
 
-			<a href="storia.smi" show="replace" >
-					<img id="opt2" region="region_scelta2" transIn="fade" fit="meet" src="media/testo/storia.gif"/>
-			</a>
-				
-			<a href="karaoke.smi" show="replace" >
-				<img id="opt3" region="region_scelta3" transIn="fade" fit="meet" src="media/testo/karaoke.gif"/>
-			</a>
+		<a href="storia.smi" show="replace" >
+				<img id="opt2" region="region_scelta2" transIn="fade" fit="meet" src="media/testo/storia.gif"/>
+		</a>
+			
+		<a href="karaoke.smi" show="replace" >
+			<img id="opt3" region="region_scelta3" transIn="fade" fit="meet" src="media/testo/karaoke.gif"/>
+		</a>
 
 	</par>
 </body>
