@@ -13,7 +13,6 @@
 	<region id="region_sfondo" top="0" left="0" width="610" height="570" z-index="2"/>
 	<region id="region_logo_fermo" top="5" left="350" width="200" height="50" z-index="2"/>
 	<region id="region_indietro" top="10" left="30" width="150" height="30" z-index="2"/>
-	<region id="region_pausavanti" top="10" left="180" width="100" height="30" z-index="2"/>
         
 	<region id="region_lyrics" top="470" left="0" width="610" height="140" z-index="1"/>
 	<region id="region_lyrics_over" top="470" left="0" width="610" height="140" z-index="2"/>
@@ -34,15 +33,10 @@
   <body>
     <par id="karaoke">
     
-	<par id="menu">
-		<a href="menu.smi" show="replace">
-			<img id="bottone_indietro" region="region_indietro" fit="fill" src="media/testo/indietro.gif"/>
-		</a>
-		<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif"/>
-		<a href="#" sourcePlaystate="pause" begin="0s" accesskey="p">
-			<img id="pausa" region="region_pausavanti" fit="fill" src="media/testo/pausa.png"/>
-		</a>
-	</par>
+	<a href="menu.smi" show="replace">
+		<img id="bottone_indietro" region="region_indietro" fit="fill" src="media/testo/indietro.gif"/>
+	</a>
+	<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif"/>
     
       <video id="video_lotr" width="500" height="450" region="region_video_lotr" transIn="fade" transOut="fade" src="media/video/lotr.rmvb" alt="Blind Guardian's Lord of the Rings song with video" fit="fill"/>
     
