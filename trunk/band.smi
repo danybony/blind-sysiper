@@ -12,10 +12,10 @@
 	<region id="region_sfondo" top="40" left="5" width="600" height="570"/>
 	<region id="region_logo_fermo" top="10" left="350" width="200" height="50"/>
 	<region id="region_indietro" top="10" left="30" width="150" height="30"/>
-	<region id="region_hansi" top="120" left="50" width="100" height="100"/>
-    <region id="region_andre" top="120" left="186" width="100" height="100"/>
-    <region id="region_marcus" top="120" left="322" width="100" height="100"/>
-    <region id="region_fred" top="120" left="458" width="100" height="100"/>
+	<region id="region_hansi" top="120" left="50" width="100" height="100" z-index="2"/>
+    <region id="region_andre" top="120" left="186" width="100" height="100" z-index="2"/>
+    <region id="region_marcus" top="120" left="322" width="100" height="100" z-index="2"/>
+    <region id="region_fred" top="120" left="458" width="100" height="100" z-index="2"/>
 	<region id="region_foto" top="280" left="50" width="200" height="200"/>
 	<region id="region_testo" top="270" left="230" width="330" height="290"/>
    </layout>
@@ -28,10 +28,11 @@
 		</a>	
 		<img id="logo" region="region_logo_fermo" dur="indefinite" fit="fill" src="media/testo/logo.gif"/>
 		<img id="sfondo" region="region_sfondo" dur="indefinite" fit="fill" src="media/img/sfondo.gif"/>
-		<img id="opt_hansi" region="region_hansi" dur="indefinite" transIn="fade" fit="meet" src="media/img/hansi.jpg"/>
-		<img id="opt_andre" region="region_andre" dur="indefinite" transIn="fade" fit="meet" src="media/img/andre.jpg"/>
-		<img id="opt_marcus" region="region_marcus" dur="indefinite" transIn="fade" fit="meet" src="media/img/marcus.jpg"/>
-		<img id="opt_fred" region="region_fred" dur="indefinite" transIn="fade" fit="meet" src="media/img/fred.jpg"/>
+		<img id="opt_hansi" region="region_hansi" dur="indefinite" fit="meet" src="media/img/hansi.jpg"/>
+		<img id="opt_andre" region="region_andre" dur="indefinite" fit="meet" src="media/img/andre.jpg"/>
+		<img id="opt_marcus" region="region_marcus" dur="indefinite" fit="meet" src="media/img/marcus.jpg"/>
+		<img id="opt_fred" region="region_fred" dur="indefinite" fit="meet" src="media/img/fred.jpg"/>
+		
 		
 		<excl dur="indefinite">
 			<par begin="0s;opt_hansi.activateEvent" dur="indefinite">
