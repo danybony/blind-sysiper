@@ -40,15 +40,15 @@
 		<img id="img_centrale" region="region_centrale" transIn="fade" fit="fill" src="media/img/sfondo_menu.jpg"/>
 
 		<a href="band.smi" show="replace" >
-			<img id="opt1" region="region_scelta1" transIn="fade" fit="meet" src="media/testo/band.gif"/>
+			<img id="opt1" region="region_scelta1" transIn="fade" fit="meet" src="media/testo/band.png"/>
 		</a>
 
 		<a href="storia.smi" show="replace" >
-				<img id="opt2" region="region_scelta2" transIn="fade" fit="meet" src="media/testo/storia.gif"/>
+				<img id="opt2" region="region_scelta2" transIn="fade" fit="meet" src="media/testo/storia.png"/>
 		</a>
 			
 		<a href="karaoke.smi" show="replace" >
-			<img id="opt3" region="region_scelta3" transIn="fade" fit="meet" src="media/testo/karaoke.gif"/>
+			<img id="opt3" region="region_scelta3" transIn="fade" fit="meet" src="media/testo/karaoke.png"/>
 		</a>
 
 	</par>

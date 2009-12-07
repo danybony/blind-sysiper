@@ -57,7 +57,7 @@
 						<animateMotion targetElement="region_logo_movimento" from="-200,-250" to="50,190" dur="3s" />
 						<animate targetElement="region_logo_movimento" attributeName="width" values="1000; 500" dur="3s"/>
 						<animate targetElement="region_logo_movimento" attributeName="height" values="246; 123" dur="3s"/>	
-						<img id="testo_progetto" region="region_progetto" fit="fill" transIn="fade" transOut="fade" src="media/testo/progetto.gif" dur="4s" begin="2s"/>
+						<img id="testo_progetto" region="region_progetto" fit="fill" transIn="fade" transOut="fade" src="media/testo/progetto.png" dur="4s" begin="2s"/>
 					</par>
 					
 					<!-- Sposta il logo nella posizione finale -->
