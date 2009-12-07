@@ -28,8 +28,8 @@
 		
 		<excl>
 			<img id="skipbardtoskald" begin="0s;skipborntobard.activateEvent;bornmourninghall.end" end="bardsong.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
-			<img id="skipskaldtoborn" begin="skipbardtoskald.activateEvent;bardsong.end" end="skaldsshadows.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong1.png" region="music_next" />
-			<img id="skipborntobard" begin="skipskaldtoborn.activateEvent;skaldsshadows.end" end="bornmourninghall.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong2.png" region="music_next" />
+			<img id="skipskaldtoborn" begin="skipbardtoskald.activateEvent;bardsong.end" end="skaldsshadows.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
+			<img id="skipborntobard" begin="skipskaldtoborn.activateEvent;skaldsshadows.end" end="bornmourninghall.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
 		</excl>
 		<excl>
 			<audio id="bardsong" fill="remove" restart="always" begin="0s;skipborntobard.activateEvent" src="media/audio/music/The Bard's Song - In The Forest.mp3" region="sottofondo"/>
