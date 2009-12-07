@@ -1,10 +1,10 @@
 <window width="440" height="370" bgcolor = "black">
 	<font face="Verdana" color="white" size="4">
-		<center><strong>Esordi (anni '80) - 2</strong></center>
+		<strong>Esordi (anni '80) - 2</strong>
 	</font>
 	<br/><br/><br/>
 	<font face="Verdana" color="white" size="3">
-		<time begin = "0"/><center>Nel 1988 arriv&#243; il contratto con la No Remorse Records, e con il rientro di Stauch e l'inserimento di Marcus Siepen alla chitarra ritmica la band fece uscire il primo album: Battalions Of Fear, con il nome di Blind Guardian. Il nome del gruppo deriva dal titolo della canzone "Guardian of the blind", ispirata al romanzo It di Stephen King.<br/><br/>
+		<time begin = "0"/>Nel 1988 arriv&#243; il contratto con la No Remorse Records, e con il rientro di Stauch e l'inserimento di Marcus Siepen alla chitarra ritmica la band fece uscire il primo album: Battalions Of Fear, con il nome di Blind Guardian. Il nome del gruppo deriva dal titolo della canzone "Guardian of the blind", ispirata al romanzo It di Stephen King.<br/><br/>
 		L'anno successivo pubblicarono il loro secondo album dal titolo Follow the Blind con la collaborazione del loro amico Kai Hansen, chitarrista degli Helloween, successivamente (e attualmente) cantante e chitarrista dei Gamma Ray.
-	</center></font>
+	</font>
 </window>
