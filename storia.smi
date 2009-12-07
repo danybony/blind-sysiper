@@ -32,10 +32,10 @@
   <body>
 	<par dur="indefinite">
 		<a href="menu.smi" show="replace">
-			<img id="bottone_indietro" region="region_indietro" dur="indefinite" fit="fill" src="media/testo/indietro.gif"/>
+			<img id="bottone_indietro" region="region_indietro" dur="indefinite" fit="fill" src="media/testo/indietro.png"/>
 		</a>
 		<img id="logo" region="region_logo_fermo" dur="indefinite" fit="fill" src="media/testo/logo.gif"/>
-		<img id="position" region="region_position" dur="indefinite" fit="meet" src="media/testo/storia.gif"/>
+		<img id="position" region="region_position" dur="indefinite" fit="meet" src="media/testo/storia.png"/>
 		<img id="sfondo" region="region_sfondo" dur="indefinite" fit="fill" src="media/img/sfondo.gif"/>
 		
 		<!-- --------------------- Definizione degli ingressi delle immagini --------------------- -->
@@ -131,7 +131,7 @@
 				<textstream id="storia_1" region="region_testo" src="media/testo/storia_1.rt" />
 				
 				<a href="#par_storia_1_2">
-					<img id="bottone_avanti_1" region="region_avanti" fit="meet" src="media/testo/next.gif"/>
+					<img id="bottone_avanti_1" region="region_avanti" fit="meet" src="media/testo/next.png"/>
                 </a>
 			</par>
 			
@@ -141,7 +141,7 @@
 				<textstream id="storia_1_2" region="region_testo" src="media/testo/storia_1_2.rt" />
 				
 				<a href="#par_storia_2">
-					<img id="bottone_avanti_1_2" region="region_avanti" fit="meet" src="media/testo/next.gif"/>
+					<img id="bottone_avanti_1_2" region="region_avanti" fit="meet" src="media/testo/next.png"/>
                 </a>
 			</par>
 	
@@ -151,7 +151,7 @@
 				<textstream id="storia_2" region="region_testo" src="media/testo/storia_2.rt"/>
 				
 				<a href="#par_storia_2_2">
-					<img id="bottone_avanti_2" region="region_avanti" fit="meet" src="media/testo/next.gif"/>
+					<img id="bottone_avanti_2" region="region_avanti" fit="meet" src="media/testo/next.png"/>
                 </a>
 			</par>
 			
@@ -161,7 +161,7 @@
 				<textstream id="storia_2_2" region="region_testo" src="media/testo/storia_2_2.rt"/>
 				
 				<a href="#par_storia_3">
-					<img id="bottone_avanti_2_2" region="region_avanti" fit="meet" src="media/testo/next.gif"/>
+					<img id="bottone_avanti_2_2" region="region_avanti" fit="meet" src="media/testo/next.png"/>
                 </a>
 			</par>
 		
@@ -171,7 +171,7 @@
 				<textstream id="storia_3" region="region_testo" src="media/testo/storia_3.rt"/>
 				
 				<a href="#par_storia_1">
-					<img id="bottone_repeat" begin="audio_3.end" region="region_avanti" fit="meet" src="media/testo/repeat.gif"/>
+					<img id="bottone_repeat" begin="audio_3.end" region="region_avanti" fit="meet" src="media/testo/repeat.png"/>
                	</a>
 			</par>
         </seq>

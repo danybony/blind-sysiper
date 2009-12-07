@@ -25,10 +25,10 @@
   <body>
      <par dur="indefinite"> 
 	    <a href="menu.smi" show="replace">
-			<img id="bottone_indietro" region="region_indietro" dur="indefinite" fit="fill" src="media/testo/indietro.gif"/>
+			<img id="bottone_indietro" region="region_indietro" dur="indefinite" fit="fill" src="media/testo/indietro.png"/>
 		</a>	
 		<img id="logo" region="region_logo_fermo" dur="indefinite" fit="fill" src="media/testo/logo.gif"/>
-		<img id="position" region="region_position" dur="indefinite" fit="meet" src="media/testo/band.gif"/>
+		<img id="position" region="region_position" dur="indefinite" fit="meet" src="media/testo/band.png"/>
 		<img id="sfondo" region="region_sfondo" dur="indefinite" fit="fill" src="media/img/sfondo.gif"/>
 		<img id="opt_hansi" region="region_hansi" dur="indefinite" fit="meet" src="media/img/hansi.jpg"/>
 		<img id="opt_andre" region="region_andre" dur="indefinite" fit="meet" src="media/img/andre.jpg"/>
