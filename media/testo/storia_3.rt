@@ -1,11 +1,11 @@
 <window width="440" height="370" bgcolor = "black">
 	<font face="Verdana" color="white" size="4">
-		<strong><center>Anni recenti</center></strong>
+		<strong>Anni recenti</strong>
 	</font>
 	<br/><br/><br/>
 	<font face="Verdana" color="white" size="3">
-		<time begin = "0"/><center>Nel 2002, dopo l'uscita del singolo And Then There Was Silence contenente la pi&#250; lunga canzone da loro scritta, di oltre 14 minuti, fu pubblicato l'album A Night at the Opera che riprende le sonorit&#225; del disco precedente affiancandovi arrangiamenti orchestrali.<br/><br/>
+		<time begin = "0"/>Nel 2002, dopo l'uscita del singolo And Then There Was Silence contenente la pi&#250; lunga canzone da loro scritta, di oltre 14 minuti, fu pubblicato l'album A Night at the Opera che riprende le sonorit&#225; del disco precedente affiancandovi arrangiamenti orchestrali.<br/><br/>
 		Nel 2005, per divergenze nei gusti musicali, il batterista Thomen Stauch lasci&#243; la band senza rancore fondando i Savage Circus e i Blind Guardian lo sostituirono con un pi&#250; giovane Frederik Ehmke.<br/><br/>
 		Nel marzo del 2006 &#233; uscito Fly, il nuovo singolo della band, seguito dall'uscita a settembre dell'ultimo album, A Twist in the Myth. A maggio del 2007 &#233; uscito il secondo singolo tratto dall'album, Another Stranger Me: &#233; la prima volta che la band trae due singoli da un unico album.<br/><br/>
-	</center></font>
+	</font>
 </window>
