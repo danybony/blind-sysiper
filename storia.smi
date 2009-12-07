@@ -10,8 +10,9 @@
    <layout>
     <root-layout  width="610" height="610" />
 		<region id="region_logo_fermo" top="10" left="350" width="200" height="50" />
+		<region id="region_position" top="10" left="210" width="100" height="40" />
 		<region id="region_sfondo" top="40" left="5" width="600" height="570"/>
-		<region id="region_indietro" top="10" left="30" width="150" height="30"/>
+		<region id="region_indietro" top="10" left="20" width="150" height="30"/>
 		<region id="region_album_1" top="140" left="45" width="80" height="80"/>
 		<region id="region_album_2" top="225" left="45" width="80" height="80"/>
 		<region id="region_album_3" top="310" left="45" width="80" height="80"/>
@@ -34,6 +35,7 @@
 			<img id="bottone_indietro" region="region_indietro" dur="indefinite" fit="fill" src="media/testo/indietro.gif"/>
 		</a>
 		<img id="logo" region="region_logo_fermo" dur="indefinite" fit="fill" src="media/testo/logo.gif"/>
+		<img id="position" region="region_position" dur="indefinite" fit="meet" src="media/testo/storia.gif"/>
 		<img id="sfondo" region="region_sfondo" dur="indefinite" fit="fill" src="media/img/sfondo.gif"/>
 		
 		<!-- --------------------- Definizione degli ingressi delle immagini --------------------- -->
