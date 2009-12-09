@@ -29,8 +29,8 @@
 		<!-- sequenza di immagini e musica -->
 		<seq>
 			<par id="bardsong">
-				<a href="#skalds" target="music_next">
-				<img id="skipbardtoskald" dur="15s" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
+				<a href="#skalds">
+				<img id="skipbardtoskald" dur="15s" fit="fill" src="media/testo/skipsong.png" region="music_next" />
 				</a>
 				<switch>
 					<audio id="bardsongHQ" system-bitrate="192000" fill="remove" restart="always" src="media/audio/music/bardsong192.mp3" region="sottofondo"/>
@@ -39,8 +39,8 @@
 			</par>
 			
 			<par id="skalds">
-				<a href="#born" target="music_next">
-				<img id="skipskaldtoborn" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
+				<a href="#born">
+				<img id="skipskaldtoborn" fit="fill" src="media/testo/skipsong.png" region="music_next" />
 				</a>
 				<switch>
 					<audio id="skaldsshadowsHQ" system-bitrate="192000" fill="remove" restart="always" src="media/audio/music/skaldsshadows192.mp3" region="sottofondo"/>
@@ -49,12 +49,12 @@
 			</par>
 			
 			<par id="born">
-				<a href="#bardsong" target="music_next">
-				<img id="skipborntobard" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
+				<a href="#bardsong">
+				<img id="skipborntobard" fit="fill" src="media/testo/skipsong.png" region="music_next" />
 				</a>
 				<switch>
-					<audio id="bornmourninghallHQ" system-bitrate="192000" fill="remove" restart="always" src="media/audio/music/skaldsshadows192.mp3" region="sottofondo"/>
-					<audio id="bornmourninghallLQ" fill="remove" restart="always" src="media/audio/music/skaldsshadows96.mp3" region="sottofondo"/>
+					<audio id="bornmourninghallHQ" system-bitrate="192000" fill="remove" restart="always" src="media/audio/music/bornmourninghall192.mp3" region="sottofondo"/>
+					<audio id="bornmourninghallLQ" fill="remove" restart="always" src="media/audio/music/bornmourninghall96.mp3" region="sottofondo"/>
 				</switch>
 			</par>
 			
