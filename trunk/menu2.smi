@@ -1,0 +1,66 @@
+<smil xmlns="http://www.w3.org/2001/SMIL20/Language" >
+<!-- Progetto di Sistemi Ipermediali
+    Anno: 2009/2010
+    Autori: Daniele Bonaldo, Luca Dei Zotti
+-->
+  <head>
+   <meta name="Title" content="Blind Guardian - Menu" />
+   <meta name="Author" content="Daniele Bonaldo, Luca Dei Zotti" />
+   <meta name="Date" content="10 Dicembre 2009" />
+   <layout>
+	<root-layout  width="610" height="610" />
+		<region id="region_sfondo" top="40" left="0" width="610" height="570" z-index="2"/>
+		<region id="region_centrale" top="90" left="0" width="610" height="290" z-index="1"/>
+		<region id="region_logo_fermo" top="5" left="350" width="200" height="50"/>
+		<region id="region_scelta1" top="380" left="40" width="150" height="100" z-index="3"/>
+		<region id="region_scelta2" top="380" left="230" width="150" height="100" z-index="3"/>
+		<region id="region_scelta3" top="380" left="420" width="150" height="100" z-index="3"/>
+		
+		<region id="music_next" top="10" left="30" width="150" height="30" z-index="4"/>
+		<region id="sottofondo" soundLevel="30%"/>
+   </layout>
+   <transition id="fade" dur="1s" type="fade" />
+  </head>
+  <body>
+	<par dur="indefinite">
+		<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif"/>
+		<img id="sfondo" region="region_sfondo" fit="fill" src="media/img/sfondo.gif"/>
+		
+		<excl>
+			<img id="skipbardtoskald" begin="0s;skipborntobard.activateEvent;bornmourninghallHQ.end;bornmourninghallLQ.end" end="bardsongHQ.end; bardsongLQ.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
+			<img id="skipskaldtoborn" begin="skipbardtoskald.activateEvent;bardsongHQ.end;bardsongLQ.end" end="skaldsshadowsHQ.end;skaldsshadowsLQ.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
+			<img id="skipborntobard" begin="skipskaldtoborn.activateEvent;skaldsshadowsHQ.end;skaldsshadowsLQ.end" end="bornmourninghallHQ.end;bornmourninghallLQ.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
+		</excl>
+		
+		<switch>
+			<audio id="bardsongHQ" system-bitrate="192000" begin="0s;skipborntobard.activateEvent" fill="remove" restart="always" src="media/audio/music/bardsong192.mp3" region="sottofondo"/>
+			<audio id="bardsongLQ" begin="0s;skipborntobard.activateEvent" fill="remove" restart="always" src="media/audio/music/bardsong96.mp3" region="sottofondo"/>
+		</switch>
+		
+		<switch>
+			<audio id="skaldsshadowsHQ" system-bitrate="192000" restart="always" fill="remove" begin="skipbardtoskald.activateEvent" src="media/audio/music/skaldsshadows192.mp3" region="sottofondo"/>
+			<audio id="skaldsshadowsLQ" restart="always" fill="remove" begin="skipbardtoskald.activateEvent" src="media/audio/music/skaldsshadows96.mp3" region="sottofondo"/>
+		</switch>
+		
+		<switch>
+			<audio id="bornmourninghallHQ" system-bitrate="192000" restart="always" fill="remove" begin="skipskaldtoborn.activateEvent" src="media/audio/music/bornmourninghall192.mp3" region="sottofondo"/>
+			<audio id="bornmourninghallLQ" restart="always" fill="remove" begin="skipskaldtoborn.activateEvent" src="media/audio/music/bornmourninghall96.mp3" region="sottofondo"/>
+		</switch>
+			
+		<img id="img_centrale" region="region_centrale" transIn="fade" fit="fill" src="media/img/sfondo_menu.jpg"/>
+
+		<a href="band.smi" show="replace" >
+			<img id="opt1" region="region_scelta1" transIn="fade" fit="meet" src="media/testo/band.png"/>
+		</a>
+
+		<a href="storia.smi" show="replace" >
+				<img id="opt2" region="region_scelta2" transIn="fade" fit="meet" src="media/testo/storia.png"/>
+		</a>
+			
+		<a href="karaoke.smi" show="replace" >
+			<img id="opt3" region="region_scelta3" transIn="fade" fit="meet" src="media/testo/karaoke.png"/>
+		</a>
+
+	</par>
+</body>
+</smil>
