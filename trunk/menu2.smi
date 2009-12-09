@@ -26,11 +26,21 @@
 		<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif"/>
 		<img id="sfondo" region="region_sfondo" fit="fill" src="media/img/sfondo.gif"/>
 		
-		<excl>
-			<img id="skipbardtoskald" begin="0s;skipborntobard.activateEvent;bornmourninghallHQ.end;bornmourninghallLQ.end" end="bardsongHQ.end; bardsongLQ.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
-			<img id="skipskaldtoborn" begin="skipbardtoskald.activateEvent;bardsongHQ.end;bardsongLQ.end" end="skaldsshadowsHQ.end;skaldsshadowsLQ.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
-			<img id="skipborntobard" begin="skipskaldtoborn.activateEvent;skaldsshadowsHQ.end;skaldsshadowsLQ.end" end="bornmourninghallHQ.end;bornmourninghallLQ.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
-		</excl>
+		<switch>
+			<excl system-bitrate="192000">
+				<img id="skipbardtoskald" system-bitrate="192000" begin="0s;skipborntobard.activateEvent;bornmourninghallHQ.end" end="bardsongHQ.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
+				<img id="skipskaldtoborn" system-bitrate="192000" begin="skipbardtoskald.activateEvent;bardsongHQ.end" end="skaldsshadowsHQ.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
+				<img id="skipborntobard" system-bitrate="192000" begin="skipskaldtoborn.activateEvent;skaldsshadowsHQ.end" end="bornmourninghallHQ.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
+			</excl>
+			
+			<excl>
+				<img id="skipbardtoskald" begin="0s;skipborntobard.activateEvent;bornmourninghallLQ.end" end="bardsongLQ.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
+				<img id="skipskaldtoborn" begin="skipbardtoskald.activateEvent;bardsongLQ.end" end="skaldsshadowsLQ.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
+				<img id="skipborntobard" begin="skipskaldtoborn.activateEvent;skaldsshadowsLQ.end" end="bornmourninghallLQ.end" dur="indefinite" fit="fill" fill="remove" src="media/testo/skipsong.png" region="music_next" />
+			</excl>
+		</switch>
+			
+			
 		
 		<switch>
 			<audio id="bardsongHQ" system-bitrate="192000" begin="0s;skipborntobard.activateEvent" fill="remove" restart="always" src="media/audio/music/bardsong192.mp3" region="sottofondo"/>
