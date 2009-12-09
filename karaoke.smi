@@ -34,12 +34,14 @@
     <par id="karaoke">
     
 	<a href="menu.smi" show="replace">
-		<img id="bottone_indietro" region="region_indietro" fit="fill" src="media/testo/indietro.gif"/>
+		<img id="bottone_indietro" region="region_indietro" fit="fill" src="media/testo/indietro.png"/>
 	</a>
 	<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif"/>
     
-      <video id="video_lotr" width="500" height="450" region="region_video_lotr" transIn="fade" transOut="fade" src="media/video/lotr.rmvb" alt="Blind Guardian's Lord of the Rings song with video" fit="fill"/>
-    
+    <switch>
+      <video systemBitrate="192000" id="video_lotr" width="500" height="450" region="region_video_lotr" transIn="fade" transOut="fade" src="media/video/lotr.rmvb" alt="Blind Guardian's Lord of the Rings song with video" fit="fill"/>
+      <video id="video_lotr_LQ" width="500" height="450" region="region_video_lotr" transIn="fade" transOut="fade" src="media/video/lotr.rm" alt="Blind Guardian's Lord of the Rings song with video" fit="fill"/>
+    </switch>
       <seq id="lyrics">
         <par>
 	<!-- There are signs on the ring -->
