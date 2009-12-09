@@ -34,10 +34,12 @@
     
 	<img id="logo" region="region_logo_fermo" fit="fill" src="media/testo/logo.gif"/>
     
+    <par>
     <switch>
 	<video systemBitrate="192000" id="video_lotr" width="500" height="450" region="region_video_lotr" transIn="fade" transOut="fade" src="media/video/lotr.rmvb" alt="Blind Guardian's Lord of the Rings song with video" fit="fill"/>
 	<video id="video_lotr_LQ" width="500" height="450" region="region_video_lotr" transIn="fade" transOut="fade" src="media/video/lotr.rm" alt="Blind Guardian's Lord of the Rings song with video" fit="fill"/>
     </switch>
+    </par>
     
       <seq id="lyrics">
         <par>
