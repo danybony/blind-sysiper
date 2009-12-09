@@ -104,7 +104,7 @@
 				<img id="opt2" region="region_scelta2" transIn="fade" fit="meet" src="media/testo/storia.png"/>
 		</a>
 			
-		<a href="karaoke.smi" show="replace" >
+		<a href="karaoke.smi" show="new" sourcePlaystate="pause">
 			<img id="opt3" region="region_scelta3" transIn="fade" fit="meet" src="media/testo/karaoke.png"/>
 		</a>
 
