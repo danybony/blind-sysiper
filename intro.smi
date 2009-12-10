@@ -18,15 +18,14 @@
 		<region id="region_skip" top="470" left="480" width="100" height="25" />
    </layout>
    <transition id="fade" dur="1s" type="fade" />
-   <transition id="fade_veloce" dur="0,5s" type="fade" />
   </head>
   <body>
      <par> 
 		<!-- Introduzione -->
 		<seq id="intro">
 			<par>
-				<img id="img_saluto_1" region="region_img_centro" transIn="fade_veloce" transOut="fade_veloce" src="media/img/saluto1.jpg" dur="2s"/>
-				<audio id="saluto_1" begin="0,5s" src="media/audio/hi1.mp3"/>
+				<img id="img_saluto_1" region="region_img_centro" transIn="fade" transOut="fade" src="media/img/saluto1.jpg" dur="2s"/>
+				<audio id="saluto_1" src="media/audio/hi1.mp3"/>
 			</par>
 			
 			<par dur="4s">
@@ -35,8 +34,8 @@
 			</par>
 			
 			<par>
-				<img id="img_saluto_2" region="region_img_centro" transIn="fade_veloce" transOut="fade_veloce" src="media/img/saluto2.jpg" dur="2s"/>
-				<audio id="saluto_2" begin="0,5s" src="media/audio/hi2.mp3"/>
+				<img id="img_saluto_2" region="region_img_centro" transIn="fade" transOut="fade" src="media/img/saluto2.jpg" dur="2s"/>
+				<audio id="saluto_2" src="media/audio/hi2.mp3"/>
 			</par>
 			
 			<par>
@@ -45,8 +44,8 @@
 			</par>
 			
 			<par>
-				<img id="img_saluto_3" region="region_img_centro" transIn="fade_veloce" transOut="fade_veloce" src="media/img/saluto3.jpg" dur="2s"/>
-				<audio id="saluto_3" begin="0,5s" src="media/audio/hi3.mp3"/>
+				<img id="img_saluto_3" region="region_img_centro" transIn="fade" transOut="fade" src="media/img/saluto3.jpg" dur="2s"/>
+				<audio id="saluto_3" src="media/audio/hi3.mp3"/>
 			</par>
 			
 			<par>
